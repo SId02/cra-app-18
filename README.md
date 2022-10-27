@@ -1,7 +1,6 @@
-##	ReactJS	18
+## ReactJS 18
 
--BulmaCSS
--React-Query
--Aixos
--React-Router-Dom	V6
--
+- BulmaCSS
+- React-Query
+- Aixos
+- React-Router-Dom V6
