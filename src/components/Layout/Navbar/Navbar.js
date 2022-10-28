@@ -1,10 +1,11 @@
 import React, { useState} from 'react'
 import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
     const [isActive, setisActive] = useState(false)
     return (
         <>
-        <nav className="navbar">
+        <nav className="navbar  is-light">
             <div className="container">
             <div className="navbar-brand">
                 <NavLink className="navbar-item" to="/">CRA-18</NavLink>
@@ -22,14 +23,14 @@ const Navbar = () => {
                         <NavLink className="navbar-item" to="/crud">CRUD</NavLink>
                         <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
                         <div className="navbar-item has-dropdown is-hoverable">
-                                        <a className="navbar-link"    >More</a>
+                                        <a className="navbar-link">More</a>
                                             <div className="navbar-dropdown">
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">A</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/werwer">Form Validation</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">Whitepaper</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">Token</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">Whitepaper</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">Token</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">Form Validation</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">Select</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">React</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">JS</NavLink>
                                             </div>      
                         </div>
                     </div>
