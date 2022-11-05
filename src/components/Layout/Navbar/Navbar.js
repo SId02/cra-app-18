@@ -28,9 +28,9 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/">Form Validation</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">Select</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">React</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">JS</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/Select">Select</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/CopyClipboard">CopytoClipboard</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
                                             </div>      
                         </div>
                     </div>
@@ -41,6 +41,7 @@ const Navbar = () => {
     </>
 )
 }
+
 
 export default Navbar
 

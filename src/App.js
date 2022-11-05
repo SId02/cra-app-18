@@ -6,7 +6,9 @@ import Crud from "./components/Pages/Crud";
 import DatePicker from "./components/Pages/DatePicker"
 import NotFound	 from "../src/components/Pages/NotFound"
 import Pagination from "./components/Pages/Paginations";
-import	Search	from	"./components/Pages/Search"
+import Search from "./components/Pages/Search"
+import CopyClipboard from "./components/Pages/CopytoClipboard"
+import	Select	 from	"./components/Pages/Select"
 function App() {
 	return (
 		<>
@@ -17,6 +19,9 @@ function App() {
 				<Route path="/DatePicker" element={ <DatePicker /> } />
 				<Route path="/Pagination" element={ <Pagination /> } />
 				<Route path="/Search" element={ <Search /> } />
+				<Route path="/Select" element={ <Select /> } />
+			
+				<Route path="/CopyClipboard" element={ <CopyClipboard /> } />
 				<Route path="*" element={<NotFound/>} />
 				
 				{/* <Route path="/" element={ <Home /> } />
