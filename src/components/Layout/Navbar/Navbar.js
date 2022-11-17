@@ -30,7 +30,8 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Select">Select</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CopyClipboard">CopytoClipboard</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">RandomQuotes</NavLink>
                                             </div>      
                         </div>
                     </div>
