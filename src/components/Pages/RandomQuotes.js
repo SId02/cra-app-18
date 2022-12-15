@@ -15,17 +15,18 @@ const RandomQuotes = () => {
 						<div className="card">
 							<div className="card-content">
 								<div className="content">
-									<p>{qoute}</p>
+									<p	className="subtitle">{qoute}</p>
 									<br />
 								</div>
 							</div>
 							<div className="is-justify-content-space-evenly">
-								<button className="button mb-3">
+								{/* <button className="button mb-3">
 									<span className="icon"></span>
 								</button>
-								&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp; */}
 								<button className="button mb-3" onClick={handleQuote}>
 									<span className="icon p-5">Next</span>
+									<i class="fa-solid fa-caret-right"></i>
 								</button>
 							</div>
 						</div>

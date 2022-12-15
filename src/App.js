@@ -9,7 +9,10 @@ import Pagination from "./components/Pages/Paginations";
 import Search from "./components/Pages/Search"
 import CopyClipboard from "./components/Pages/CopytoClipboard"
 import Select from "./components/Pages/Select"
-import	RandomQuotes	from"./components/Pages/RandomQuotes"	
+import	RandomQuotes	from"./components/Pages/RandomQuotes"
+import Accordion from "./components/Pages/Accordion"
+import FormValid from "./components/Pages/FormValid"
+import	ShoppingCart	from	"./components/Pages/ShoppingCart"
 function App() {
 	return (
 		<>
@@ -21,9 +24,11 @@ function App() {
 				<Route path="/Pagination" element={ <Pagination /> } />
 				<Route path="/Search" element={ <Search /> } />
 				<Route path="/Select" element={ <Select /> } />
-			
 				<Route path="/CopyClipboard" element={ <CopyClipboard /> } />
 				<Route path="/RandomQuotes" element={ <RandomQuotes /> } />
+				<Route path="/Accordion" element={ <Accordion /> } />
+				<Route path="/FormValid" element={ <FormValid /> } />
+				<Route path="/ShoppingCart" element={ <ShoppingCart/> } />
 
 				<Route path="*" element={<NotFound/>} />
 				

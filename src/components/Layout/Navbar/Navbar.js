@@ -24,9 +24,11 @@ const Navbar = () => {
                         <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
                         <div className="navbar-item has-dropdown is-hoverable">
                                         <a className="navbar-link">More</a>
-                                            <div className="navbar-dropdown">
+                                <div className="navbar-dropdown">
+                                <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
+
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/">Form Validation</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/FormValid">Form Validation</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Select">Select</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CopyClipboard">CopytoClipboard</NavLink>
