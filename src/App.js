@@ -13,6 +13,8 @@ import	RandomQuotes	from"./components/Pages/RandomQuotes"
 import Accordion from "./components/Pages/Accordion"
 import FormValid from "./components/Pages/FormValid"
 import	ShoppingCart	from	"./components/Pages/ShoppingCart"
+import Coins from "./components/Pages/Coins";
+
 function App() {
 	return (
 		<>
@@ -29,7 +31,8 @@ function App() {
 				<Route path="/Accordion" element={ <Accordion /> } />
 				<Route path="/FormValid" element={ <FormValid /> } />
 				<Route path="/ShoppingCart" element={ <ShoppingCart/> } />
-
+				<Route path="/Coins" element={<Coins />} />
+			
 				<Route path="*" element={<NotFound/>} />
 				
 				{/* <Route path="/" element={ <Home /> } />
