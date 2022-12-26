@@ -20,13 +20,13 @@ const Navbar = () => {
                 <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                     <div className="navbar-end">
                         <NavLink className="navbar-item" to="/">Home</NavLink>
-                        <NavLink className="navbar-item" to="/crud">CRUD</NavLink>
+                        <NavLink className="navbar-item" to="/crud">home</NavLink>
                         <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
                         <div className="navbar-item has-dropdown is-hoverable">
                                         <a className="navbar-link">More</a>
                                 <div className="navbar-dropdown">
                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
-                                <NavLink className="navbar-item navbar-item-dropdown" to="/Coins">CoinEx</NavLink>
+                                <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">CoinEx</NavLink>
 
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/FormValid">Form Validation</NavLink>

@@ -3,12 +3,13 @@ import React from "react";
 const Home = () => {
 	return (
 		<>
+			<div className="section">
 			<section className="section is-fullheight">
 				<div className="container">
 					<div className="columns is-multiline is-centered">
 						<div className="column is-8 has-text-centered">
-							<span className="has-text-grey-dark">CRA-APP-18</span>
-							<p className="mb-3 subtitle has-text-grey">
+							<span className="has-text-gray	is-size-3 is-bold">CRA-APP-18</span>
+							<p className="mb-3 subtitle has-text-black">
 								It's Web App using ReactJS
 							</p>
 						</div>
@@ -115,7 +116,8 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+				</section>
+				</div>
 			{/*  */}
 			<br />
 			<br />
