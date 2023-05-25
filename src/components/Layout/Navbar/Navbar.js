@@ -25,9 +25,10 @@ const Navbar = () => {
                         <div className="navbar-item has-dropdown is-hoverable">
                                         <a className="navbar-link">More</a>
                                 <div className="navbar-dropdown">
+                                    
+                                <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">CoinEx</NavLink>
-
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/FormValid">Form Validation</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
