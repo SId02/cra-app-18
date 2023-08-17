@@ -20,8 +20,10 @@ const Navbar = () => {
                 <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                     <div className="navbar-end">
                         <NavLink className="navbar-item" to="/">Home</NavLink>
-                        <NavLink className="navbar-item" to="/crud">home</NavLink>
+                        {/* <NavLink className="navbar-item" to="/crud">home</NavLink> */}
                         <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
+                        <NavLink className="navbar-item" to="/PasswordGenerators">Password Generators</NavLink>
+                        
                         <div className="navbar-item has-dropdown is-hoverable">
                                         <a className="navbar-link">More</a>
                                 <div className="navbar-dropdown">
@@ -36,6 +38,7 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CopyClipboard">CopytoClipboard</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">RandomQuotes</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
                                             </div>      
                         </div>
                     </div>

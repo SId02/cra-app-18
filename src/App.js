@@ -16,6 +16,8 @@ import CoinEx from "./components/Pages/CoinEx/CoinEx";
 import Coins from "./components/Pages/CoinEx/Coins";
 import Exchanges from "./components/Pages/CoinEx/Exchanges";
 import Counter from "./components/Pages/Counter";
+import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReducer";
+import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 function App() {
 	return (
 		<>
@@ -31,18 +33,20 @@ function App() {
 				<Route path="/Accordion" element={<Accordion />} />
 				<Route path="/FormValid" element={<FormValid />} />
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />
-				<Route path="/Counter" element={<Counter />} />
+				<Route path="/Counter" element={ <Counter /> } />
+				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />
 				<Route path="/CoinEx" element={<CoinEx />}>
 					<Route path="Coins" element={<Coins />} />
 					<Route path="Exchanges" element={<Exchanges />} />
 				</Route>
+				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
+				
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<br />
 			<Footer />
-{/* <Route path="/" element={ <Home /> } />
+			{/* <Route path="/" element={ <Home /> } />
 				<Route path="/" element={<Home />} /> */}
-
 		</>
 	);
 }
