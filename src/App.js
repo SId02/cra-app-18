@@ -18,6 +18,7 @@ import Exchanges from "./components/Pages/CoinEx/Exchanges";
 import Counter from "./components/Pages/Counter";
 import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReducer";
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
+import Calculator from "./components/Pages/Calculator";
 function App() {
 	return (
 		<>
@@ -40,7 +41,7 @@ function App() {
 					<Route path="Exchanges" element={<Exchanges />} />
 				</Route>
 				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
-				
+				<Route path="/Calculator" element={ <Calculator /> } />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<br />
