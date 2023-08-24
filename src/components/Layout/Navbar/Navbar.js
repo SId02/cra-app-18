@@ -26,8 +26,8 @@ const Navbar = () => {
                         <div className="navbar-item has-dropdown is-hoverable">
                                             <a className="navbar-link">More</a>
                                             <div className="navbar-dropdown">
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/Calculator">Calculator</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/Calculator">Calculator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">CoinEx</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
@@ -36,6 +36,7 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Select">Select</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CopyClipboard">CopytoClipboard</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">MemeGenerator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">RandomQuotes</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
                                             </div>      

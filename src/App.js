@@ -10,7 +10,7 @@ import CopyClipboard from "./components/Pages/CopytoClipboard";
 import Select from "./components/Pages/Select";
 import RandomQuotes from "./components/Pages/RandomQuotes";
 import Accordion from "./components/Pages/Accordion";
-import FormValid from "./components/Pages/FormValid";
+import MemeGenerator from "./components/Pages/MemeGenerators";
 import ShoppingCart from "./components/Pages/ShoppingCart";
 import CoinEx from "./components/Pages/CoinEx/CoinEx";
 import Coins from "./components/Pages/CoinEx/Coins";
@@ -19,6 +19,7 @@ import Counter from "./components/Pages/Counter";
 import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReducer";
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 import Calculator from "./components/Pages/Calculator";
+import FormValid from "./components/Pages/FormValidation";
 function App() {
 	return (
 		<>
@@ -32,7 +33,7 @@ function App() {
 				<Route path="/CopyClipboard" element={<CopyClipboard />} />
 				<Route path="/RandomQuotes" element={<RandomQuotes />} />
 				<Route path="/Accordion" element={<Accordion />} />
-				<Route path="/FormValid" element={<FormValid />} />
+				{/* <Route path="/FormValid" element={<FormValid />} /> */}
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />
 				<Route path="/Counter" element={ <Counter /> } />
 				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />
@@ -42,6 +43,9 @@ function App() {
 				</Route>
 				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
 				<Route path="/Calculator" element={ <Calculator /> } />
+				<Route path="/FormValidation" element={ <FormValid/> } />
+				<Route path="/MemeGenerator" element={ <MemeGenerator/> } />
+
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<br />
