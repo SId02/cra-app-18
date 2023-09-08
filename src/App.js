@@ -19,7 +19,7 @@ import Counter from "./components/Pages/Counter";
 import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReducer";
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 import Calculator from "./components/Pages/Calculator";
-import FormValid from "./components/Pages/FormValidation";
+import FormValidation from "./components/Pages/FormValidation";
 function App() {
 	return (
 		<>
@@ -43,12 +43,13 @@ function App() {
 				</Route>
 				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
 				<Route path="/Calculator" element={ <Calculator /> } />
-				<Route path="/FormValidation" element={ <FormValid/> } />
+				<Route path="/FormValidation" element={ <FormValidation/> } />
 				<Route path="/MemeGenerator" element={ <MemeGenerator/> } />
 
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<br />
+			<br /><br /><br /><br /><br /><br />
 			<Footer />
 			{/* <Route path="/" element={ <Home /> } />
 				<Route path="/" element={<Home />} /> */}
