@@ -20,7 +20,7 @@ const Navbar = () => {
                 <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                     <div className="navbar-end">
                         <NavLink className="navbar-item" to="/">Home</NavLink>
-                        {/* <NavLink className="navbar-item" to="/crud">home</NavLink> */}
+                        {/* <NavLink className="navbar-item" to="/crud">home</NavLink>  */}
                         <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
                         <NavLink className="navbar-item" to="/PasswordGenerator">Password Generators</NavLink>
                         <div className="navbar-item has-dropdown is-hoverable">
@@ -38,7 +38,10 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">MemeGenerator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">RandomQuotes</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/YearCalculator">Year Calculator</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/TechNews">techNews</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/">Data Fetch</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/">Data Fetch</NavLink>
                                             </div>      
                         </div>
                     </div>

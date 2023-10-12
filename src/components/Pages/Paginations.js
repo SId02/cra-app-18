@@ -21,7 +21,7 @@ const Paginations = () => {
         <>
             <div className="container mt-5">
             <nav className="pagination is-rounded" role="navigation" aria-label="pagination">
-                <button className="pagination-previous"  onClick={prevPage} disabled={page === 1}>Previou Page</button>
+                <button className="pagination-previous" onClick={prevPage} disabled={page === 1}>Previous Page</button>
                 <button className="pagination-next"  onClick={nextPage} disabled={!posts.length}>Next Page</button>
             </nav>
             </div>

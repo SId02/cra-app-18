@@ -19,14 +19,13 @@ function Calculator() {
     return (
         <div className="conatiner box m-6">
             <form action="" className="calculator">
-                <div className="columns  is-desktop  mt-5 has-text-centered">
-                    <div className="column is-half is-offset-one-quarter">
-                        
-                    <input type="text" className="value" value={inputvalue} />
-                    <div className="column" onClick={() => clear()}><button className="box">Clear</button></div>
+                <div className="columns  is-desktop  mt-5 has-text-centered is-vcentered">
+                    <div className="column">
+                    <input type="text" className="value box" value={ inputvalue } />
+                    <button className="box" onClick={() => clear()}>Clear</button>
                     </div>
                 </div>
-                <div className="columns is-desktop  mt-5 has-text-centered is-multiline has-background-light">
+                <div className="columns mt-5 has-text-centered is-multiline has-background-light">
                     <div className="column" onClick={() => display("1")}><button className="box">1</button></div>
                     <div className="column" onClick={() => display("2")}><button className="box">2</button></div>
                     <div className="column" onClick={() => display("3")}><button className="box">3</button></div>

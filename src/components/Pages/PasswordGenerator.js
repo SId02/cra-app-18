@@ -14,7 +14,7 @@ const passwordGenerator = useCallback(() => {
   let pass = ""
   let letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
   if (numberAllowed) letter += "0123456789"
-  if (symbolAllowed) letter += "!@#$%&*"
+  if (symbolAllowed) letter += "!@#$%&"
 
   for (let i = 1; i <= length; i++) {
 	let char = Math.floor(Math.random() * letter.length + 1)
@@ -41,15 +41,13 @@ useEffect(() => {
 	return (
     <>
       <section>
-
-      
 			<div className="container p-5 has-text-centered">
 				<h1 className="title ">Password Generator</h1>
 			</div>
 
-			<div classNameName="container p-6">
+			<div classNameName="container p-6 is-centered">
 				<div className="columns is-mobile">
-					<div className="column is-half is-offset-one-quarter">
+					<div className="column is-4 is-offset-one-quarter">
 						<form className="box">
 							<div className="field is-grouped">
 								<p className="control is-expanded">

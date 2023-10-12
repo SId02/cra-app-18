@@ -6,7 +6,7 @@ const Accordion = () => {
 
 			<section className="section">
 				<div className="container">
-					<div className="mb-5 columns is-multiline is-centered">
+					<div className="mb-5 columns is-multiline is-centered ">
 						<div className="column is-10 is-6-desktop has-text-centered">
 							<h2 className="mt-2 mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">
 								Accordion
@@ -14,7 +14,7 @@ const Accordion = () => {
 						</div>
 					</div>
 
-					<div className="wrapper	columns mt-5 is-multiline is-centered">
+					<div className="wrapper	columns mt-5 is-multiline is-centered ">
 						<AccordionTemplate title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, sunt.">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
 							euismod orci sed tristique placerat. Fusce in ligula urna. Fusce

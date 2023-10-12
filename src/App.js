@@ -20,6 +20,9 @@ import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReduce
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 import Calculator from "./components/Pages/Calculator";
 import FormValidation from "./components/Pages/FormValidation";
+import  YearCalculator  from "./components/Pages/YearCalculator";
+import TechNews from "./components/Pages/TechNews";
+import Crud from "./components/Pages/Crud";
 function App() {
 	return (
 		<>
@@ -33,7 +36,6 @@ function App() {
 				<Route path="/CopyClipboard" element={<CopyClipboard />} />
 				<Route path="/RandomQuotes" element={<RandomQuotes />} />
 				<Route path="/Accordion" element={<Accordion />} />
-				{/* <Route path="/FormValid" element={<FormValid />} /> */}
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />
 				<Route path="/Counter" element={ <Counter /> } />
 				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />
@@ -43,9 +45,11 @@ function App() {
 				</Route>
 				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
 				<Route path="/Calculator" element={ <Calculator /> } />
-				<Route path="/FormValidation" element={ <FormValidation/> } />
-				<Route path="/MemeGenerator" element={ <MemeGenerator/> } />
-
+				<Route path="/FormValidation" element={ <FormValidation/> }/>
+				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
+				<Route path="/YearCalculator" element={ <YearCalculator /> } />
+				<Route path="/TechNews" element={ <TechNews /> }></Route>
+				{/* <Route path="/Crud" element={<Crud/>}></Route> */}
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<br />

@@ -5,7 +5,7 @@ const AccordionTemplate = ({ title, children }) => {
 
 	return (
 		<>
-			<div className="accordion-wrapper column is-10 is-8-desktop">
+			<div className="accordion-wrapper column is-10 is-8-desktop box">
 				<ul>
 					<li
 						className={`accordion-title mb-4  ${isOpen ? "open" : ""}`}

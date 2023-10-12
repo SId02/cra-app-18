@@ -3,7 +3,7 @@ import React from 'react'
 const CopytoClipboard = () => {
     return (
       <>
-    <div>CopytoClipboard</div>
+    <div className='text-center'>CopytoClipboard</div>
 
         </>
   )
