@@ -39,7 +39,7 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">MemeGenerator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">RandomQuotes</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/YearCalculator">Year Calculator</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/TechNews">techNews</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/TechNews">TechNews</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/">Data Fetch</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/">Data Fetch</NavLink>
                                             </div>      
