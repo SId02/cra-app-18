@@ -20,7 +20,6 @@ const Navbar = () => {
                 <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                     <div className="navbar-end">
                         <NavLink className="navbar-item" to="/">Home</NavLink>
-                        {/* <NavLink className="navbar-item" to="/crud">home</NavLink>  */}
                         <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
                         <NavLink className="navbar-item" to="/PasswordGenerator">Password Generators</NavLink>
                         <div className="navbar-item has-dropdown is-hoverable">
@@ -34,7 +33,6 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/FormValidation">Form Validation</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Select">Select</NavLink>
-                                                {/* <NavLink className="navbar-item navbar-item-dropdown" to="/CopyClipboard">CopytoClipboard</NavLink> */}
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">MemeGenerator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">RandomQuotes</NavLink>

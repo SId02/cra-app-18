@@ -22,7 +22,6 @@ import Calculator from "./components/Pages/Calculator";
 import FormValidation from "./components/Pages/FormValidation";
 import  YearCalculator  from "./components/Pages/YearCalculator";
 import TechNews from "./components/Pages/TechNews";
-// import Crud from "./components/Pages/Crud";
 function App() {
 	return (
 		<>
@@ -49,7 +48,6 @@ function App() {
 				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
 				<Route path="/YearCalculator" element={ <YearCalculator /> } />
 				<Route path="/TechNews" element={ <TechNews /> }/>
-				{/* <Route path="/Crud" element={<Crud/>}></Route> */}
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<br />

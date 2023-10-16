@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const YearCalculator = () => {
+ const YearCalculator = () => {
     return (
         <>
     <div>yearCalculator</div>

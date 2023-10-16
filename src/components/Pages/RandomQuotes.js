@@ -20,10 +20,7 @@ const RandomQuotes = () => {
 								</div>
 							</div>
 							<div className="is-justify-content-space-evenly">
-								{/* <button className="button mb-3">
-									<span className="icon"></span>
-								</button>
-								&nbsp;&nbsp;&nbsp; */}
+								
 								<button className="button mb-3" onClick={handleQuote}>
 									<span className="icon p-5">Next</span>
 									<i class="fa-solid fa-caret-right"></i>

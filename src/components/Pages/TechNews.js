@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TechNews = () => {
+const TechNews = () => {
 	return (
 		<>
 			<div>TechNews</div>
