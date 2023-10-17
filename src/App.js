@@ -20,7 +20,6 @@ import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReduce
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 import Calculator from "./components/Pages/Calculator";
 import FormValidation from "./components/Pages/FormValidation";
-import  YearCalculator  from "./components/Pages/YearCalculator";
 import TechNews from "./components/Pages/TechNews";
 function App() {
 	return (
@@ -46,7 +45,6 @@ function App() {
 				<Route path="/Calculator" element={ <Calculator /> } />
 				<Route path="/FormValidation" element={ <FormValidation/> }/>
 				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
-				<Route path="/YearCalculator" element={ <YearCalculator /> } />
 				<Route path="/TechNews" element={ <TechNews /> }/>
 				<Route path="*" element={<NotFound />} />
 			</Routes>
