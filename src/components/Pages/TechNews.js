@@ -6,6 +6,6 @@ const TechNews = () => {
 			<div>TechNews</div>
 		</>
 	);
-};
+}
 
 export default TechNews;

@@ -3,7 +3,16 @@ import React from "react";
 const Home = () => {
 	return (
 		<>
-			<div className="section">
+			
+			<div className="section"
+			style={{
+				background: `url(/src/img/img-bckg1.svg)`,
+				backgroundRepeat: 'no-repeat',
+				backgroundOrigin: 'center',
+				backgroundSize: 'cover',
+				height: '100%',
+
+			}}>  
 				<section className="section is-fullheight">
 					<div className="container">
 						<div className="columns is-multiline is-centered">
@@ -18,8 +27,6 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-
-				{/*  */}
 				<section className="section">
 					<div className="container has-text-centered">
 						<div className="is-vcentered columns is-multiline has-text-centered">
