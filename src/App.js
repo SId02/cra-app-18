@@ -18,6 +18,7 @@ import Exchanges from "./components/Pages/CoinEx/Exchanges";
 import Counter from "./components/Pages/Counter";
 import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReducer";
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
+import CurrencyConverter from "./components/Pages/CurrencyConverter";
 import Calculator from "./components/Pages/Calculator";
 import FormValidation from "./components/Pages/FormValidation";
 import YearCalculator  from "./components/Pages/YearCalculator";
@@ -44,7 +45,8 @@ function App() {
 				</Route>
 				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
 				<Route path="/Calculator" element={ <Calculator /> } />
-				<Route path="/FormValidation" element={ <FormValidation/> }/>
+				<Route path="/FormValidation" element={ <FormValidation /> } />
+				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
 				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
 				<Route path="/YearCalculator" element={<YearCalculator/>} />
 				<Route path="/TechNews" element={ <TechNews /> }/>

@@ -1,18 +1,11 @@
 import React from "react";
 
+
 const Home = () => {
 	return (
 		<>
 			
-			<div className="section"
-			style={{
-				background: `url(/src/img/img-bckg1.svg)`,
-				backgroundRepeat: 'no-repeat',
-				backgroundOrigin: 'center',
-				backgroundSize: 'cover',
-				height: '100%',
-
-			}}>  
+			<div className="section">  
 				<section className="section is-fullheight">
 					<div className="container">
 						<div className="columns is-multiline is-centered">
