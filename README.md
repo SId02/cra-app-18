@@ -1,3 +1,10 @@
+
+## Create reactJs App
+   
+   npx create-react-app my-app
+   cd my-app
+   npm start
+
 ##	ReactJS	18
 
 - React JS (18.0.2)
@@ -9,22 +16,17 @@
 - Redux-Toolkit
 
 
+### Packages Install 
 
-npx create-react-app my-app
-cd my-app
-npm start
+    npm install @reduxjs/toolkit
 
+    npm install axios
 
+    npm i react-query
 
-npm install @reduxjs/toolkit
+    npm install react-redux
 
-npm install axios
-
-npm i react-query
-
-npm install react-redux
-
-npm i react-router-dom
+    npm i react-router-dom
 
 
 
