@@ -29,7 +29,8 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Calculator">Calculator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">CoinEx</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DatePickerWithMax">DatePickerMax</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/FormValidation">Form Validation</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Select">Select</NavLink>

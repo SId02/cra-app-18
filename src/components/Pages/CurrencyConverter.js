@@ -124,7 +124,7 @@ const CurrencyConverter = () => {
 										Converted Amount:
 									</label>
 									<div className="control">
-										<p className="input is-medium" readonly>{convertedAmount}</p>
+										<p className="input is-medium" readonly>{convertedAmount} ertert</p>
 									</div>
 								</div>
 							</div>

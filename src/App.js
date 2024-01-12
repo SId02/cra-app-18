@@ -23,6 +23,7 @@ import Calculator from "./components/Pages/Calculator";
 import FormValidation from "./components/Pages/FormValidation";
 import YearCalculator  from "./components/Pages/YearCalculator";
 import TechNews from "./components/Pages/TechNews";
+import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 function App() {
 	return (
 		<>
@@ -49,7 +50,8 @@ function App() {
 				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
 				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
 				<Route path="/YearCalculator" element={<YearCalculator/>} />
-				<Route path="/TechNews" element={ <TechNews /> }/>
+				<Route path="/TechNews" element={ <TechNews /> } />
+				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
