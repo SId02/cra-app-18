@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isActive, setisActive] = useState(false)
     return (
         <>
-        <nav className="navbar  is-light">
+        <nav className="navbar  is-light has-shadow is-spaced">
             <div className="container">
             <div className="navbar-brand">
                 <NavLink className="navbar-item" to="/">CRA-18</NavLink>

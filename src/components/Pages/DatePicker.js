@@ -27,7 +27,7 @@ const DatePicker = () => {
 		const setfromyear = setfromformat[0];
 		const setfrommonth = setfromformat[1];
 		const setfromdate = setfromformat[2];
-		const setfromformatdate =setfromyear + "" + setfrommonth + "" + setfromdate;
+		const setfromformatdate = setfromyear + "" + setfrommonth + "" + setfromdate;
 		setFromdate(getfromdatevalue);
 		setFromdateformat(setfromformatdate);
 	
@@ -44,7 +44,7 @@ const DatePicker = () => {
 		<>
 			<div className="container">
 				<h3 className="content has-text-centered is-size-3 is-underlined">
-					DatePicker
+					Date Picker
 				</h3>
 
 				<div className="columns is-desktop  is-centered">
@@ -52,7 +52,7 @@ const DatePicker = () => {
 							<div className="field is-horizontal" onSubmit={handleSubmit}>
 								<div className="field-body">
 									<div class="field-label is-normal">
-										<label class="label">From</label>
+										<label class="label">From Date</label>
 									</div>
 									<div className="field">
 										<p className="control">
@@ -60,7 +60,7 @@ const DatePicker = () => {
 										</p>
 									</div>
 									<div class="field-label is-normal">
-										<label class="label">To</label>
+										<label class="label">To Date</label>
 									</div>
 									<div className="field">
 										<p className="control">
