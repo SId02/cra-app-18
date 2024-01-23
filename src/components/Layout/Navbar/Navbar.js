@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isActive, setisActive] = useState(false)
     return (
         <>
-        <nav className="navbar  is-light has-shadow is-spaced">
+        <nav className="navbar  is-light has-shadow">
             <div className="container">
             <div className="navbar-brand">
                 <NavLink className="navbar-item" to="/">CRA-18</NavLink>
@@ -38,10 +38,16 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">MemeGenerator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">RandomQuotes</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/YearCalculator">Year Calculator</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/PokemonApi">PokemonApi</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/CRUD">CRUD</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/ProductCardSlider">ProductCardSlider</NavLink>
+                                    {/* <NavLink className="navbar-item navbar-item-dropdown" to="/AgeValidation"> AgeValidation</NavLink> */}
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/TechNews">TechNews</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CurrencyConverter">Currency Converter</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/">Data Fetch</NavLink>
-                                            </div>      
+                                 
+                                </div>   
+                               
                         </div>
                     </div>
                 </div>
@@ -53,7 +59,16 @@ const Navbar = () => {
 }
 
 
-export default Navbar
+export default Navbar;
+
+/*
+
+   <div className="navbar-item has-dropdown is-hoverable">
+   <a className="navbar-link">Extraa</a>
+      <div className="navbar-dropdown">
+      </div>
+</div>
+*/
 
 
 

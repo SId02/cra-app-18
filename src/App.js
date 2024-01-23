@@ -24,6 +24,9 @@ import FormValidation from "./components/Pages/FormValidation";
 import YearCalculator  from "./components/Pages/YearCalculator";
 import TechNews from "./components/Pages/TechNews";
 import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
+import AgeValidation from "./components/Pages/AgeValidation";
+import PokemonApi from "./components/Pages/PokemonApi";
+import ProductCardSlider from "./components/Pages/ProductCardSlider"; 
 function App() {
 	return (
 		<>
@@ -49,7 +52,10 @@ function App() {
 				<Route path="/FormValidation" element={ <FormValidation /> } />
 				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
 				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
-				<Route path="/YearCalculator" element={<YearCalculator/>} />
+				<Route path="/PokemonApi" element={ <PokemonApi /> } />
+				<Route path="/ProductCardSlider" element={ <ProductCardSlider /> } />
+				<Route path="/YearCalculator" element={ <YearCalculator /> } />
+				<Route path="/AgeValidation" element={<AgeValidation/>} />
 				<Route path="/TechNews" element={ <TechNews /> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
 				<Route path="*" element={<NotFound />} />
