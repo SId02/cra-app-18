@@ -27,38 +27,40 @@ import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 import AgeValidation from "./components/Pages/AgeValidation";
 import PokemonApi from "./components/Pages/PokemonApi";
 import ProductCardSlider from "./components/Pages/ProductCardSlider"; 
+// import LeapYearChecker from "./components/Pages/LeapYearChecker";
 function App() {
 	return (
 		<>
 			<Navbar />
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/DatePicker" element={<DatePicker />} />
-				<Route path="/Pagination" element={<Pagination />} />
-				<Route path="/Search" element={<Search />} />
-				<Route path="/Select" element={<Select />} />
-				<Route path="/CopyClipboard" element={<CopyClipboard />} />
-				<Route path="/RandomQuotes" element={<RandomQuotes />} />
+				<Route path="/" element={ <Home /> } />
 				<Route path="/Accordion" element={<Accordion />} />
-				<Route path="/ShoppingCart" element={<ShoppingCart />} />
+				<Route path="/CopyClipboard" element={<CopyClipboard />} />
+				<Route path="/Calculator" element={ <Calculator /> } />
+				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
 				<Route path="/Counter" element={ <Counter /> } />
-				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />
 				<Route path="/CoinEx" element={<CoinEx />}>
 					<Route path="Coins" element={<Coins />} />
 					<Route path="Exchanges" element={<Exchanges />} />
 				</Route>
-				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
-				<Route path="/Calculator" element={ <Calculator /> } />
-				<Route path="/FormValidation" element={ <FormValidation /> } />
-				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
-				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
-				<Route path="/PokemonApi" element={ <PokemonApi /> } />
-				<Route path="/ProductCardSlider" element={ <ProductCardSlider /> } />
-				<Route path="/YearCalculator" element={ <YearCalculator /> } />
-				<Route path="/AgeValidation" element={<AgeValidation/>} />
-				<Route path="/TechNews" element={ <TechNews /> } />
+				<Route path="/DatePicker" element={ <DatePicker /> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
+				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
+				<Route path="/FormValidation" element={ <FormValidation /> } />
+				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
+				<Route path="/PasswordGenerator" element={ <PassowrdGenerators /> } />
+				<Route path="/ProductCardSlider" element={ <ProductCardSlider /> } />
+				<Route path="/PokemonApi" element={ <PokemonApi /> } />
+				<Route path="/Pagination" element={<Pagination />} />
+				<Route path="/Search" element={<Search />} />
+				<Route path="/Select" element={<Select />} />
+				<Route path="/ShoppingCart" element={<ShoppingCart />} />
+				<Route path="/RandomQuotes" element={<RandomQuotes />} />
+				<Route path="/AgeValidation" element={ <AgeValidation /> } />
+				<Route path="/TechNews" element={ <TechNews /> } />
+				<Route path="/YearCalculator" element={ <YearCalculator /> } />
 				<Route path="*" element={<NotFound />} />
+				{/* <Route path="/LeapYearChecker" element={ <LeapYearChecker/> } /> */}
 			</Routes>
 			<Footer />
 		</>

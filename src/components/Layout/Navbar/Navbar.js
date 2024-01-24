@@ -28,23 +28,24 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Calculator">Calculator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">CoinEx</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">DatePicker</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DatePickerWithMax">DatePickerMax</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">Coin Ex</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">Date Picker</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DatePickerWithMax">Date Picker Max</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/FormValidation">Form Validation</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Select">Select</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">MemeGenerator</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">RandomQuotes</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">Meme Generator</NavLink>
+                                                <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">Random Quotes</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/YearCalculator">Year Calculator</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/PokemonApi">PokemonApi</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CRUD">CRUD</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/ProductCardSlider">ProductCardSlider</NavLink>
-                                    {/* <NavLink className="navbar-item navbar-item-dropdown" to="/AgeValidation"> AgeValidation</NavLink> */}
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/ProductCardSlider">Product Card Slider</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/AgeValidation"> Age Validation</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/LeapYearChecker">Leap Year Checker</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/TechNews">TechNews</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CurrencyConverter">Currency Converter</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/">Data Fetch</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
                                  
                                 </div>   
                                
