@@ -1,38 +1,41 @@
 import React, { useState } from 'react';
 
 const LeapYearChecker = () => {
-   
+    const [year, setYear] = useState('');
+    const [message, setMessage] = useState('');
+  
+    const checkLeapYear = () => {
+      const isLeapYear = new Date(year, 1, 29).getMonth() === 1;
+      const messageText = isLeapYear
+        ? `The year ${year} is a leap year.`
+        : `The year ${year} is not a leap year.`;
+      setMessage(messageText);
+    };
    
     return (
         <>
             <section>
                     <div className="container p-5 has-text-centered">
-                        <h1 className="title ">Age Validation</h1>
+                        <h1 className="title ">Leap Year Checker</h1>
                     </div>
-
-                    <div className="container p-6 is-centered">
+                     <div className="container p-6 ">
                                 <div className="columns is-desktop  has-text-centered">
-                                    <div className="column is-4 is-offset-one-quarter box ">
-                                        <form  onSubmit={handleSubmit}>
+                                    <div className="column is-4 is-offset-one-quarter box">
                                             <div className="field">
-                                                <label className="label">Date</label>
                                                 <div className="control">
-                                                <input  className="input" type="text" value={date}    onChange={handleChange} placeholder="YYYY-MM-DD"/>
+                                              <input type="number" className="input" placeholder="Enter a year" value={year} onChange={(e) => setYear(e.target.value)} />
                                                 </div>
                                             </div>
-                                            {error && <p className="notification  p-3 m-2">{error}</p>}
-                                            <button className="button is-primary" type="submit">
+                                             <p className="  p-3 m-2">{message}</p>
+                                            <button className="button is-primary is-outlined" type="submit" onClick={checkLeapYear}>
                                                 Submit
                                             </button>
-                                        </form>
                                     </div>
                                 </div>
-                    </div>
+                    </div> 
             </section>
-        
-  
         </>
     );
    }
 
-export default LeapYearChecker
+export default LeapYearChecker;

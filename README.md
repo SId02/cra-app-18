@@ -1,9 +1,9 @@
 
 ## Create reactJs App
    
-'''  npx create-react-app my-app
+   npx create-react-app my-app
    cd my-app
-   npm start '''
+   npm start
 
 ##	ReactJS	18
 

@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isActive, setisActive] = useState(false)
     return (
         <>
-        <nav className="navbar  is-light has-shadow">
+        <nav className="navbar  has-background-info-light has-shadow">
             <div className="container">
             <div className="navbar-brand">
                 <NavLink className="navbar-item" to="/">CRA-18</NavLink>
@@ -24,7 +24,7 @@ const Navbar = () => {
                         <NavLink className="navbar-item" to="/PasswordGenerator">Password Generators</NavLink>
                         <div className="navbar-item has-dropdown is-hoverable">
                                             <a className="navbar-link">More</a>
-                                            <div className="navbar-dropdown">
+                                            <div className="navbar-dropdown is-multiple">
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Calculator">Calculator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>

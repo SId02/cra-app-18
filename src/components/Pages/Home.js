@@ -2,15 +2,11 @@ import React from "react";
 
 
 const Home = () => {
-
-	
-
-
 	return (
 		<>
 			
-			<div className="section">  
-				<section className="section is-fullheight">
+			<div className="section has-background-white-bis">  
+				<section className="section is-fullheight" >
 					<div className="container">
 						<div className="columns is-multiline is-centered">
 							<div className="column is-8 has-text-centered">
