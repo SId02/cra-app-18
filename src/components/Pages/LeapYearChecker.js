@@ -4,13 +4,14 @@ const LeapYearChecker = () => {
     const [year, setYear] = useState('');
     const [message, setMessage] = useState('');
   
-    const checkLeapYear = () => {
-      const isLeapYear = new Date(year, 1, 29).getMonth() === 1;
-      const messageText = isLeapYear
-        ? `The year ${year} is a leap year.`
-        : `The year ${year} is not a leap year.`;
-      setMessage(messageText);
-    };
+     const checkLeapYear = () => {
+        const isLeapYear = new Date(year, 1, 29).getMonth() === 1;
+                const messageText = isLeapYear
+                ? `The year ${year} is a leap year.`
+                : `The year ${year} is not a leap year.`;
+        setMessage(messageText);
+     };
+   
    
     return (
         <>
@@ -26,7 +27,7 @@ const LeapYearChecker = () => {
                                               <input type="number" className="input" placeholder="Enter a year" value={year} onChange={(e) => setYear(e.target.value)} />
                                                 </div>
                                             </div>
-                                             <p className="  p-3 m-2">{message}</p>
+                                             <p className="notification p-3 m-2">{message}</p>
                                             <button className="button is-primary is-outlined" type="submit" onClick={checkLeapYear}>
                                                 Submit
                                             </button>
@@ -39,3 +40,6 @@ const LeapYearChecker = () => {
    }
 
 export default LeapYearChecker;
+
+
+

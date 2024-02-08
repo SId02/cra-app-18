@@ -23,10 +23,11 @@ const Navbar = () => {
                         <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
                         <NavLink className="navbar-item" to="/PasswordGenerator">Password Generators</NavLink>
                         <div className="navbar-item has-dropdown is-hoverable">
-                                            <a className="navbar-link">More</a>
+                                            <NavLink className="navbar-link"> More </NavLink>
                                             <div className="navbar-dropdown is-multiple">
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/Calculator">Calculator</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/Calculator">Calculator</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/CopytoClipboard">Copy to Clipboard</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">Coin Ex</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">Date Picker</NavLink>
@@ -43,18 +44,15 @@ const Navbar = () => {
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/ProductCardSlider">Product Card Slider</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/AgeValidation"> Age Validation</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/LeapYearChecker">Leap Year Checker</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/TechNews">TechNews</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/HackerNews">Hacker News</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CurrencyConverter">Currency Converter</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
-                                 
-                                </div>   
-                               
-                        </div>
+                                </div>                           
+                            </div>                    
                     </div>
                 </div>
             </div> 
         </nav>
-    
     </>
 )
 }
@@ -62,14 +60,6 @@ const Navbar = () => {
 
 export default Navbar;
 
-/*
-
-   <div className="navbar-item has-dropdown is-hoverable">
-   <a className="navbar-link">Extraa</a>
-      <div className="navbar-dropdown">
-      </div>
-</div>
-*/
 
 
 

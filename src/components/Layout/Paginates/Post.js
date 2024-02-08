@@ -1,7 +1,6 @@
 const Post = ({ post }) => {
 	return (
 		<>
-			<div className="container">
 			<ul>
 				<li className="box mt-3 mb-1 has-background-white">
 					<article className="media">
@@ -18,8 +17,6 @@ const Post = ({ post }) => {
 					</article>
 				</li>
 			</ul>
-			</div>
-			
 		</>
 	);
 };

@@ -70,6 +70,7 @@ const Select = () => {
 					</div>
 				</div>
 			</div>
+			
 		</>
 	);
 };

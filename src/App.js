@@ -6,7 +6,7 @@ import DatePicker from "./components/Pages/DatePicker";
 import NotFound from "../src/components/Pages/NotFound";
 import Pagination from "./components/Pages/Paginations";
 import Search from "./components/Pages/Search";
-import CopyClipboard from "./components/Pages/CopytoClipboard";
+import CopytoClipboard from "./components/Pages/CopytoClipboard";
 import Select from "./components/Pages/Select";
 import RandomQuotes from "./components/Pages/RandomQuotes";
 import Accordion from "./components/Pages/Accordion";
@@ -22,7 +22,7 @@ import CurrencyConverter from "./components/Pages/CurrencyConverter";
 import Calculator from "./components/Pages/Calculator";
 import FormValidation from "./components/Pages/FormValidation";
 import YearCalculator  from "./components/Pages/YearCalculator";
-import TechNews from "./components/Pages/TechNews";
+import HackerNews from "./components/Pages/HackerNews";
 import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 import AgeValidation from "./components/Pages/AgeValidation";
 import PokemonApi from "./components/Pages/PokemonApi";
@@ -38,7 +38,7 @@ function App() {
 				<Route path="/Pagination" element={<Pagination />} />
 				<Route path="/Search" element={<Search />} />
 				<Route path="/Select" element={<Select />} />
-				<Route path="/CopyClipboard" element={<CopyClipboard />} />
+				<Route path="/CopytoClipboard" element={<CopytoClipboard />} />
 				<Route path="/RandomQuotes" element={<RandomQuotes />} />
 				<Route path="/Accordion" element={<Accordion />} />
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />
@@ -58,8 +58,7 @@ function App() {
 				<Route path="/YearCalculator" element={ <YearCalculator /> } />
 				<Route path="/AgeValidation" element={ <AgeValidation /> } />
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
-				
-				<Route path="/TechNews" element={ <TechNews /> } />
+				<Route path="/HackerNews" element={ <HackerNews /> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>

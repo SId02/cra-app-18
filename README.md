@@ -1,5 +1,5 @@
 
-## Create reactJs App
+## Create React Js App
    
    npx create-react-app my-app
    cd my-app
@@ -8,11 +8,11 @@
 ##	ReactJS	18
 
 - React JS (18.0.2)
-- Bulma CSS
-- React-Query
+- Bulma CSS (0.9.4)
+- React-Router-Dom (V6) 
 - Aixos
-- React-Router-Dom(V6)
 - Context API
+- React-Query
 - Redux-Toolkit
 
 
@@ -29,4 +29,8 @@
     npm i react-router-dom
 
 
+### ICONS 
 
+ - Icons use are free and open source icons
+
+   Some icons are taken from Bootstrap Icons ,Font Awesome icons,Feather Icons

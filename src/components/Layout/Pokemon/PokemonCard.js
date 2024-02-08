@@ -4,11 +4,11 @@ import React from 'react';
 const PokemonCard = ({ pokemon }) => {
  return (
     <div className="card">
-     {/* <div className="card-image">
+      <div className="card-image">
          <figure className="image is-4by3">
           <img src={pokemon.sprites.front_default} alt={pokemon.name} />
         </figure> 
-      </div>*/}
+      </div>
       <div className="card-content">
         <div className="media">
           <div className="media-content">
