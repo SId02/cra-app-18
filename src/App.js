@@ -19,7 +19,6 @@ import Counter from "./components/Pages/Counter";
 import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReducer";
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 import CurrencyConverter from "./components/Pages/CurrencyConverter";
-import Calculator from "./components/Pages/Calculator";
 import FormValidation from "./components/Pages/FormValidation";
 import YearCalculator  from "./components/Pages/YearCalculator";
 import HackerNews from "./components/Pages/HackerNews";
@@ -49,7 +48,6 @@ function App() {
 					<Route path="Exchanges" element={<Exchanges />} />
 				</Route>
 				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
-				<Route path="/Calculator" element={ <Calculator /> } />
 				<Route path="/FormValidation" element={ <FormValidation /> } />
 				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
 				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />

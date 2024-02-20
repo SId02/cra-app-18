@@ -60,7 +60,7 @@ const Home = () => {
 							</div>
 							<div className="mb-4 column is-3">
 								<div className="box is-flex is-align-items-center has-background-light" style={{ height: "128px" }}>
-									React-Query
+								
 								</div>
 							</div>
 							<div className="mb-4 column is-3">

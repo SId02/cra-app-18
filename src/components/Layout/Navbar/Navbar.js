@@ -26,7 +26,7 @@ const Navbar = () => {
                                             <NavLink className="navbar-link"> More </NavLink>
                                             <div className="navbar-dropdown is-multiple">
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/Calculator">Calculator</NavLink>
+                                    {/* <NavLink className="navbar-item navbar-item-dropdown" to="/"></NavLink> */}
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CopytoClipboard">Copy to Clipboard</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">Coin Ex</NavLink>

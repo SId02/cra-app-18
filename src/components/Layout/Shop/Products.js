@@ -9,7 +9,7 @@ const Products = ({ state, dispatch }) => {
 				{products.map((prod) => (
 					<div className="column is-4-desktop is-6-tablet" key={prod.id}>
 						<div className="has-background-white pt-4 px-10 pb-10 is-relative">
-							<a className="mt-6 mb-2 px-6 is-block" href="#">
+							<a className="mt-6 mb-2 px-6 is-block" >
 								<img
 									className="mx-auto mb-5 image"
 									style={{ height: "224px", objectFit: "contain" }}
@@ -24,7 +24,7 @@ const Products = ({ state, dispatch }) => {
 							{cart.some((p) => p.id === prod.id) ? (
 								<button
 									className="button is-outlined p-0 ml-auto is-flex"
-									href="#"
+								
 									style={{ width: "48px", height: "48px" }}
 									onClick={() =>
 										dispatch({
@@ -38,7 +38,7 @@ const Products = ({ state, dispatch }) => {
 							) : (
 								<button
 									className="button is-outlined p-0 ml-auto is-flex"
-									href="#"
+									
 									style={{ width: "48px", height: "48px" }}
 									onClick={() =>
 										dispatch({
