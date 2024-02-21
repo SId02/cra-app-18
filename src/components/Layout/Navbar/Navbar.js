@@ -22,7 +22,7 @@ const Navbar = () => {
                         <NavLink className="navbar-item" to="/">Home</NavLink>
                         <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
                         <NavLink className="navbar-item" to="/PasswordGenerator">Password Generators</NavLink>
-                        <div className="navbar-item has-dropdown is-hoverable">
+                        <div className="navbar-item has-dropdown is-hoverable is-multiple">
                                             <NavLink className="navbar-link"> More </NavLink>
                                             <div className="navbar-dropdown is-multiple">
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
@@ -47,6 +47,7 @@ const Navbar = () => {
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/HackerNews">Hacker News</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CurrencyConverter">Currency Converter</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/GithubApi">GithubApi</NavLink>
                                 </div>                           
                             </div>                    
                     </div>
