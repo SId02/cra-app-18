@@ -28,6 +28,8 @@ import PokemonApi from "./components/Pages/PokemonApi";
 import ProductCardSlider from "./components/Pages/ProductCardSlider"; 
 import LeapYearChecker from "./components/Pages/LeapYearChecker";
 import GithubApi from "./components/Pages/GithubApi";
+import LoginPageWithDefaultValue from "./components/Pages/LoginPageWithDefaultValue";
+import LoginPageWithAPI from "./components/Pages/LoginPageWithAPI";
 function App() {
 	return (
 		<>
@@ -59,7 +61,10 @@ function App() {
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
 				<Route path="/HackerNews" element={ <HackerNews /> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
-				<Route path="/GithubApi" element={<GithubApi />} />
+				<Route path="/GithubApi" element={ <GithubApi /> } />
+				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />
+				<Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
+				
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />

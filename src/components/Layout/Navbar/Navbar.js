@@ -1,17 +1,17 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
+import useDropdownToggle from './useDropdownToggle'
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const [isActive, setisActive] = useState(false)
+    //const [isActive, setisActive] = useState(false);
+    const { isActive, toggleDropdown } = useDropdownToggle()   
     return (
         <>
-        <nav className="navbar  has-background-info-light has-shadow">
+        <nav className="navbar  is-light has-shadow">
             <div className="container">
             <div className="navbar-brand">
                 <NavLink className="navbar-item" to="/">CRA-18</NavLink>
-                <NavLink  onClick={() => {
-                setisActive(!isActive)
-            }} className={`navbar-burger burger ${isActive ? 'is-active' : ''}`} role="button" aria-label="menu" aria-expanded="false"  to="/">
+                         <NavLink   className={`navbar-burger burger ${isActive ? 'is-active' : ''}`} role="button" aria-label="menu" aria-expanded="false"   onClick={toggleDropdown} > 
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -20,13 +20,23 @@ const Navbar = () => {
                 <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                     <div className="navbar-end">
                         <NavLink className="navbar-item" to="/">Home</NavLink>
-                        <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
+                            <NavLink className="navbar-item" to="/pagination">Pagination</NavLink>
                         <NavLink className="navbar-item" to="/PasswordGenerator">Password Generators</NavLink>
+                            
+                            <div className={`navbar-item has-dropdown is-hoverable ${isActive ? 'is-active' : ''}`}>
+                                <NavLink className="navbar-link" onClick={toggleDropdown} > More </NavLink>
+                                <div className="navbar-dropdown is-multiple is-arrowless">
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/LoginPageWithAPI">LoginPageWithAPI</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/CurrencyConverter">Currency Converter</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/GithubApi">GithubApi</NavLink>
+                                </div>
+                            </div>
                         <div className="navbar-item has-dropdown is-hoverable is-multiple">
                                             <NavLink className="navbar-link"> More </NavLink>
                                             <div className="navbar-dropdown is-multiple">
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
-                                    {/* <NavLink className="navbar-item navbar-item-dropdown" to="/"></NavLink> */}
+                                     <NavLink className="navbar-item navbar-item-dropdown" to="/LoginPageWithDefaultValue">LoginPageWithDefault</NavLink> 
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CopytoClipboard">Copy to Clipboard</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">Coin Ex</NavLink>
@@ -45,9 +55,7 @@ const Navbar = () => {
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/AgeValidation"> Age Validation</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/LeapYearChecker">Leap Year Checker</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/HackerNews">Hacker News</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/CurrencyConverter">Currency Converter</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/GithubApi">GithubApi</NavLink>
+                                    
                                 </div>                           
                             </div>                    
                     </div>
