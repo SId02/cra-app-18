@@ -9,7 +9,6 @@ import Search from "./components/Pages/Search";
 import CopytoClipboard from "./components/Pages/CopytoClipboard";
 import Select from "./components/Pages/Select";
 import RandomQuotes from "./components/Pages/RandomQuotes";
-import Accordion from "./components/Pages/Accordion";
 import MemeGenerator from "./components/Pages/MemeGenerators";
 import ShoppingCart from "./components/Pages/ShoppingCart";
 import CoinEx from "./components/Pages/CoinEx/CoinEx";
@@ -42,7 +41,6 @@ function App() {
 				<Route path="/Select" element={<Select />} />
 				<Route path="/CopytoClipboard" element={<CopytoClipboard />} />
 				<Route path="/RandomQuotes" element={<RandomQuotes />} />
-				<Route path="/Accordion" element={<Accordion />} />
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />
 				<Route path="/Counter" element={ <Counter /> } />
 				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />
