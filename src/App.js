@@ -41,6 +41,7 @@ function App() {
 				<Route path="/Select" element={<Select />} />
 				<Route path="/CopytoClipboard" element={<CopytoClipboard />} />
 				<Route path="/RandomQuotes" element={<RandomQuotes />} />
+		
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />
 				<Route path="/Counter" element={ <Counter /> } />
 				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />

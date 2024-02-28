@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 const fullDev = [
-	{ name: "FrontEnd", value: "FE", framework: ["Angular", "React", "Vue"] },
+	{
+		name: "FrontEnd",
+		value: "FE",
+		framework: ["Angular", "React", "Vue"],
+	},
 	{
 		name: "BackEnd",
 		value: "BE",
@@ -14,19 +18,13 @@ const fullDev = [
 ];
 const Select = () => {
 	const [language, setLanguage] = useState([]);
-
 	useEffect(() => {
-		console.log(language[0]);
-		console.log(language[1]);
 	}, [language]);
 
 	return (
 		<>
-			<div className="container">
-				<h3 className="content has-text-centered is-size-3 ">
-					select
-				</h3>
-
+			<div className="container p-5">
+				<h3 className="content has-text-centered is-size-3 "> Select Option </h3>
 				<div className="columns is-desktop  is-centered">
 					<div className="column is-8 is-half">
 						<div className="field is-horizontal">
@@ -37,15 +35,17 @@ const Select = () => {
 											<select
 												value={language}
 												onChange={(e) => {
-													console.log(e.target.value);
 													setLanguage([e.target.value]);
 												}}
 											>
 												{fullDev.map((item, index) => {
 													return (
-														<option key={index} value={index}>
-															{item.name}
-														</option>
+														<>
+															<option key={index} value={index}>
+																{item.name}
+															</option>
+														</>
+														
 													);
 												})}
 											</select>
@@ -70,7 +70,6 @@ const Select = () => {
 					</div>
 				</div>
 			</div>
-			
 		</>
 	);
 };

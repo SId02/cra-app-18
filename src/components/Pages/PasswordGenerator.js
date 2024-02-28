@@ -6,14 +6,14 @@ const PasswordGenerator = () => {
 	const [symbolAllowed, setSymbolAllowed] = useState(false);
 	const [password, setPassword] = useState("");
 
-	//useRef hook
+	
 	const passwordRef = useRef(null);
 
 	const passwordGenerator = useCallback(() => {
 		let pass = "";
 		let letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		if (numberAllowed) letter += "0123456789";
-		if (symbolAllowed) letter += "!@#$%&";
+		if (symbolAllowed) letter += "!@#$%&*";
 
 		for (let i = 1; i <= length; i++) {
 			let char = Math.floor(Math.random() * letter.length + 1);
@@ -40,9 +40,9 @@ const PasswordGenerator = () => {
 					<h1 className="title ">Password Generator</h1>
 				</div>
 
-				<div classNameName="container p-6 is-centered">
+				<div className="container p-6 is-centered">
 					<div className="columns is-desktop is-centered">
-						<div className="column is-4 is-half">
+						<div className="column is-6 is-half">
 							<form className="box">
 								<div className="field is-grouped">
 									<p className="control is-expanded">

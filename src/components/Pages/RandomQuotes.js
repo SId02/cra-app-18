@@ -30,6 +30,7 @@ const RandomQuotes = () => {
 					</div>
 				</div>
 			</div>
+			<br />
 		</>
 	);
 };

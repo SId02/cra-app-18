@@ -24,7 +24,7 @@ const PokemonApi = () => {
 				<div className="container p-6 is-centered">
 					<div className="columns is-mobile">
 						<div className="column is-4 is-offset-one-quarter">
-							{/*  */}
+							
 							<div className="container">
 								<div className="columns is-multiline">
 									{pokemonList.map((pokemon) => (
@@ -34,7 +34,7 @@ const PokemonApi = () => {
 									))}
 								</div>
 							</div>
-							{/*  */}
+						
 						</div>
 					</div>
 				</div>
