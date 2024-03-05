@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import TipCalculator from "../Layout/TipCalculator/TipCalculator";
+//import BmiCalculator from "../Layout/BmiCalculator/BmiCalculator";
 function Counter() {
 	const [count, setCount] = useState(0);
 
@@ -22,11 +23,16 @@ function Counter() {
 	
 	return (
 		<>
+			
+
+			<div className="container has-text-centered p-5">
+				<h3 className="is-size-4"> Counter | Tip Calculator</h3>
+			</div>
 			<section className="section">
 				<div className="container">
 					<div className="mb-5 columns is-multiline is-centered">
 						<div className="column is-10 is-6-desktop has-text-centered">
-							<h2 className="mt-2 mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">
+							<h2 className="mt-2 mb-4 title">
 								Counter
 							</h2>
 						</div>
@@ -55,14 +61,16 @@ function Counter() {
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			<hr />
+							<div className="container">
+										<TipCalculator/>
+							</div>	
+			<hr />
+							{/* <div className="container">
+										<BmiCalculator/>
+							</div>	 */}
+
+		
 		
 		</>
 	);
