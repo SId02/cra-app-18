@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "../src/components/Layout/Navbar/Navbar";
-import Footer from "../src/components/Layout/Footer/Footer";
-import Home from "../src/components/Pages/Home";
+import Navbar from "./components/Layout/Navbar/Navbar";
+import Footer from "./components/Layout/Footer/Footer";
+import Home from "./components/Pages/Home";
 import DatePicker from "./components/Pages/DatePicker";
-import NotFound from "../src/components/Pages/NotFound";
+import NotFound from "./components/Pages/NotFound";
 import Pagination from "./components/Pages/Paginations";
 import Search from "./components/Pages/Search";
 import CopytoClipboard from "./components/Pages/CopytoClipboard";
