@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className="navbar  is-light has-shadow">
             <div className="container">
             <div className="navbar-brand">
-                <NavLink className="navbar-item" to="/">CRA-18</NavLink>
+                <NavLink className="navbar-item" to="/">React App 18</NavLink>
                          <NavLink   className={`navbar-burger burger ${isActive ? 'is-active' : ''}`} role="button" aria-label="menu" aria-expanded="false"   onClick={toggleDropdown} > 
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>

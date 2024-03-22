@@ -13,7 +13,7 @@ const Home = () => {
 						<div className="columns is-multiline is-centered">
 							<div className="column is-8 has-text-centered">
 								<span className="has-text-white is-size-1 is-bold">
-									CRA-APP-18
+									React App 18
 								</span>
 								<p className="mb-3 subtitle has-text-black">
 									It's Web App using ReactJS 		

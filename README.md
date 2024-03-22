@@ -8,11 +8,12 @@
 
 ## 
   npx create-react-app cra-app-18 is migrated to ViteJS
+  
+   [Doc](https://coreui.io/blog/how-to-migrate-create-react-app-to-vite/)
 
+ 
 
-  https://coreui.io/blog/how-to-migrate-create-react-app-to-vite/
-
-##	ReactJS	18
+##	React JS	18
 
 - React JS (18.0.2)
 - Bulma CSS (0.9.4)
