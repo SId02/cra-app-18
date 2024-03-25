@@ -5,14 +5,6 @@
    cd my-app
    npm start
 
-
-## 
-  npx create-react-app cra-app-18 is migrated to ViteJS
-  
-   [Doc](https://coreui.io/blog/how-to-migrate-create-react-app-to-vite/)
-
- 
-
 ##	React JS	18
 
 - React JS (18.0.2)
