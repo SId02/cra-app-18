@@ -40,7 +40,6 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">Meme Generator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">Random Quotes</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/YearCalculator">Year Calculator</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/PokemonApi">PokemonApi</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CRUD">CRUD</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/ProductCardSlider">Product Card Slider</NavLink>

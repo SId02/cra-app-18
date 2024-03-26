@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import ReveiwRating from "../Layout/ReviewRating/ReviewRating";
+import YearCalculator from "../Layout/YearCalculator/YearCalculator";
 const fullDev = [
 	{
 		name: "FrontEnd",
@@ -23,6 +25,12 @@ const Select = () => {
 
 	return (
 		<>
+			<br />
+			<div className="container p-5">
+				<h2 className="content has-text-centered is-size-3 "> Select Option | Review Rating | Year Calculator </h2>
+			</div>
+
+
 			<div className="container p-5">
 				<h3 className="content has-text-centered is-size-3 "> Select Option </h3>
 				<div className="columns is-desktop  is-centered">
@@ -70,6 +78,15 @@ const Select = () => {
 					</div>
 				</div>
 			</div>
+			<br />
+			<hr />
+			<br />
+			<ReveiwRating />
+			<br />
+			<hr />
+			<br />
+			<YearCalculator />
+			
 		</>
 	);
 };

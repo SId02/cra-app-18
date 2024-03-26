@@ -19,7 +19,6 @@ import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReduce
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 import CurrencyConverter from "./components/Pages/CurrencyConverter";
 import FormValidation from "./components/Pages/FormValidation";
-import YearCalculator  from "./components/Pages/YearCalculator";
 import HackerNews from "./components/Pages/HackerNews";
 import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 import AgeValidation from "./components/Pages/AgeValidation";
@@ -55,7 +54,6 @@ function App() {
 				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
 				<Route path="/PokemonApi" element={ <PokemonApi /> } />
 				<Route path="/ProductCardSlider" element={ <ProductCardSlider /> } />
-				<Route path="/YearCalculator" element={ <YearCalculator /> } />
 				<Route path="/AgeValidation" element={ <AgeValidation /> } />
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
 				<Route path="/HackerNews" element={ <HackerNews /> } />
