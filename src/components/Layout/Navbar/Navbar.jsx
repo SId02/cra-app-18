@@ -29,7 +29,7 @@ const Navbar = () => {
                                             <div className="navbar-dropdown is-multiple">
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
                                      <NavLink className="navbar-item navbar-item-dropdown" to="/LoginPageWithDefaultValue">LoginPageWithDefault</NavLink> 
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/CopytoClipboard">Copy to Clipboard</NavLink>
+                                    
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">Coin Ex</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">Date Picker</NavLink>
