@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ReveiwRating from "../Layout/ReviewRating/ReviewRating";
-import YearCalculator from "../Layout/YearCalculator/YearCalculator";
 const fullDev = [
 	{
 		name: "FrontEnd",
@@ -85,7 +84,7 @@ const Select = () => {
 			<br />
 			<hr />
 			<br />
-			<YearCalculator />
+		
 			
 		</>
 	);

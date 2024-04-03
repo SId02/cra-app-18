@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-
+import YearsCalculator from "../Layout/YearCalculator/YearCalculator";
 const DatePicker = () => {
-
 	const [disable, setDisable] = useState(true);
 	const [todate, setTodate] = useState([]);
 	const [fromdate, setFromdate] = useState([]);
@@ -27,10 +26,10 @@ const DatePicker = () => {
 		const setfromyear = setfromformat[0];
 		const setfrommonth = setfromformat[1];
 		const setfromdate = setfromformat[2];
-		const setfromformatdate = setfromyear + "" + setfrommonth + "" + setfromdate;
+		const setfromformatdate =
+			setfromyear + "" + setfrommonth + "" + setfromdate;
 		setFromdate(getfromdatevalue);
 		setFromdateformat(setfromformatdate);
-	
 	};
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -42,38 +41,77 @@ const DatePicker = () => {
 	};
 	return (
 		<>
-			<div className="container">
-				<h3 className="content has-text-centered is-size-3 is-underlined">
-					Date Picker
-				</h3>
+			<section className="py-6 section">
+				<div className="container pb-5 has-text-centered">
+					<h1 className="title">Date Picker</h1>
+				</div>
+				<div className="container pt-5 is-horizontal">
+					<div className="columns is-multiline is-centered">
+						<div className="column is-5 is-8-desktop">
+							<form className="box " onSubmit={handleSubmit}>
+								<div className="columns ">
+								
+									<div className="column">
+										<div className="field">
+											<label for="weight" className="label">
+												From Date
+											</label>
+											<div className="control">
+												<input type="date"
+													className="input is-medium"
+													name="fromdate"
+													placeholder="dd-mm-yyyy"
+													onChange={(e) => handlefromdate(e)}
+												/>
+											</div>
+										</div>
+									</div>
+									<div className="column">
+										<div className="field">
+											<label for="height" className="label">
+											To Date
+											</label>
+											<div className="control">
+												<input type="date"
+													className="input is-medium "
+													
+											name="todate"
+											placeholder="dd-mm-yyyy"
+											disabled={disable}
+											onChange={(e) => handletodate(e)}
+												/>
+											</div>
+										</div>
+									</div>
 
-				<div className="columns is-desktop  is-centered">
-					<div className="column is-8 is-half">
-							<div className="field is-horizontal" onSubmit={handleSubmit}>
-								<div className="field-body">
-									<div class="field-label is-normal">
-										<label class="label">From Date</label>
-									</div>
+				
+								</div>
+								<div className="column">
 									<div className="field">
-										<p className="control">
-										<input className="input" type="date" name="fromdate" placeholder="dd-mm-yyyy"  onChange={ (e) => handlefromdate(e) } />
-										</p>
-									</div>
-									<div class="field-label is-normal">
-										<label class="label">To Date</label>
-									</div>
-									<div className="field">
-										<p className="control">
-										<input className="input" type="date" name="todate" placeholder="dd-mm-yyyy"	disabled={disable} onChange={(e) => handletodate(e)}/>
-										</p>
+										<div className="control has-text-centered">
+											<button
+												className="button is-link calculate"
+												type="button"
+												name="submit"
+												value="Submit"
+												onclick="age()"
+											>
+												Calculate
+											</button>
+										</div>
 									</div>
 								</div>
-							</div>
-						
+								<div id="age" className="text-center"></div>
+							</form>
+						</div>
 					</div>
-					
 				</div>
-			</div>
+			</section>
+
+			<hr />
+			<section>
+				<YearsCalculator />
+			</section>
 		</>
 	);
 };

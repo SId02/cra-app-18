@@ -6,6 +6,7 @@ import DatePicker from "./components/Pages/DatePicker";
 import NotFound from "./components/Pages/NotFound";
 import Pagination from "./components/Pages/Paginations";
 import Search from "./components/Pages/Search";
+import RandomColorGenerator from "./components/Pages/RandomColorGenerator";
 import Select from "./components/Pages/Select";
 import RandomQuotes from "./components/Pages/RandomQuotes";
 import MemeGenerator from "./components/Pages/MemeGenerators";
@@ -37,6 +38,7 @@ function App() {
 				<Route path="/Pagination" element={<Pagination />} />
 				<Route path="/Search" element={<Search />} />
 				<Route path="/Select" element={<Select />} />
+				<Route path="/RandomColorGenerator" element={<RandomColorGenerator />} />
 				<Route path="/RandomQuotes" element={<RandomQuotes />} />
 		
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />

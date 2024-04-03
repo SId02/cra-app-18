@@ -16,7 +16,7 @@ const Footer = () => {
 			<footer className="main-footer has-text-centered" style={mystyle}>
 				<div className="container">
 					<div className="footer-copyright">
-						<p> 2022 - {currentYear} React App 18 </p>
+						<p> 2022 - {currentYear} React App</p>
 					</div>
 				</div>
 			</footer>

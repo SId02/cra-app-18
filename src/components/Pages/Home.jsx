@@ -12,11 +12,11 @@ const Home = () => {
 					<div className="container">
 						<div className="columns is-multiline is-centered">
 							<div className="column is-8 has-text-centered">
-								<span className="has-text-white is-size-1 is-bold">
-									React App 18
+								<span className="has-text-white is-size-1 is-bold mb-5 pb-5">
+									React App 
 								</span>
-								<p className="mb-3 subtitle has-text-black">
-									It's Web App using ReactJS 		
+								<p className="mb-3 subtitle has-text-black pt-5 mt-5">
+									It's Web App using React JS 18 , React Router Version 6 , Axios and Bulma CSS. 	
 								</p>
 							</div>
 						</div>
@@ -26,57 +26,58 @@ const Home = () => {
 					<div className="container has-text-centered">
 						<div className="is-vcentered columns is-multiline has-text-centered">
 							<div className="mb-4 column is-3 has-text-centered">
-								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-3 is-bold" style={{ height: "128px" }}>
-									React JS
+								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold" style={{height:"128px"}}>
+									React JS 18
 								</div>
 							</div>
 							<div className="mb-4 column is-3 has-text-centered">
-								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold"	style={{ height: "128px" }}>
+								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold"	style={{height:"128px"}}>
 									Bulma CSS
 								</div>
 							</div>
 							<div className="mb-4 column is-3 has-text-centered">
-								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={ { height: "128px" } }>
+								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold" style={{height:"128px"}}>
 									Hooks
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
-								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={{ height: "128px" }}>
-									React-Router-Dom									
+							<div className="mb-4 column is-3 has-text-centered">
+								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold" style={{height:"128px"}}>
+									React Router Version 6									
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
-								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={ { height: "128px" } }>
+							<div className="mb-4 column is-3 has-text-centered">
+								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold" style={{height:"128px"}}>
 									Axios
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
-								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={{ height: "128px" }}>
+							<div className="mb-4 column is-3 has-text-centered">
+								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold" style={{height:"128px"}}>
 									React-Redux
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
-								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold"	style={ { height: "128px" } }>
+							<div className="mb-4 column is-3 has-text-centered">
+								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold"	style={{height:"128px"}}>
 									Reduxjs/Toolkit
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
-								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={{ height: "128px" }}>
+							<div className="mb-4 column is-3 has-text-centered">
+								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold" style={{height:"128px"}}>
+									Chart JS
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
+							<div className="mb-4 column is-3 has-text-centered">
 							 	<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={{ height: "128px" }}>
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
+							<div className="mb-4 column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={{ height: "128px" }}>
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
+							<div className="mb-4 column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={{ height: "128px" }}>
 								</div>
 							</div>
-							<div className="mb-4 column is-3">
+							<div className="mb-4 column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-size-3 is-bold" style={{ height: "128px" }}>
 								</div>
 							</div>

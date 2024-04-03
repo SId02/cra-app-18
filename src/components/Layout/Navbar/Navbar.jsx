@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className="navbar  is-light has-shadow">
             <div className="container">
             <div className="navbar-brand">
-                <NavLink className="navbar-item" to="/">React App 18</NavLink>
+                <NavLink className="navbar-item" to="/">React App</NavLink>
                          <NavLink   className={`navbar-burger burger ${isActive ? 'is-active' : ''}`} role="button" aria-label="menu" aria-expanded="false"   onClick={toggleDropdown} > 
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -29,7 +29,7 @@ const Navbar = () => {
                                             <div className="navbar-dropdown is-multiple">
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Counter">Counter</NavLink>
                                      <NavLink className="navbar-item navbar-item-dropdown" to="/LoginPageWithDefaultValue">LoginPageWithDefault</NavLink> 
-                                    
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/RandomColorGenerator">Random Color Generator</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/ShoppingCart">Shop</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/CoinEx">Coin Ex</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/DatePicker">Date Picker</NavLink>
@@ -37,11 +37,11 @@ const Navbar = () => {
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/FormValidation">Form Validation</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Search">Search</NavLink>
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/Select">Select</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink>
-                                                <NavLink className="navbar-item navbar-item-dropdown" to="/MemeGenerator">Meme Generator</NavLink>
+                                                {/* <NavLink className="navbar-item navbar-item-dropdown" to="/Accordion">Accordion</NavLink> */}
+                                                
                                                 <NavLink className="navbar-item navbar-item-dropdown" to="/RandomQuotes">Random Quotes</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/PokemonApi">PokemonApi</NavLink>
-                                    <NavLink className="navbar-item navbar-item-dropdown" to="/CRUD">CRUD</NavLink>
+                                    {/* <NavLink className="navbar-item navbar-item-dropdown" to="/PokemonApi">PokemonApi</NavLink> */}
+                                    {/* <NavLink className="navbar-item navbar-item-dropdown" to="/CRUD">CRUD</NavLink> */}
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/ProductCardSlider">Product Card Slider</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/AgeValidation"> Age Validation</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/LeapYearChecker">Leap Year Checker</NavLink>
