@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TipCalculator from "../Layout/TipCalculator/TipCalculator";
 //import BmiCalculator from "../Layout/BmiCalculator/BmiCalculator";
+import CountryDetails from "../Layout/CountryDetails/CountryDetails";
 function Counter() {
 	const [count, setCount] = useState(0);
 
@@ -69,7 +70,9 @@ function Counter() {
 							{/* <div className="container">
 										<BmiCalculator/>
 							</div>	 */}
-
+ 							<div className="container">
+										<CountryDetails/>
+							</div>	
 		
 		
 		</>

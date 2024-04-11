@@ -9,7 +9,6 @@ import Search from "./components/Pages/Search";
 import RandomColorGenerator from "./components/Pages/RandomColorGenerator";
 import Select from "./components/Pages/Select";
 import RandomQuotes from "./components/Pages/RandomQuotes";
-import MemeGenerator from "./components/Pages/MemeGenerators";
 import ShoppingCart from "./components/Pages/ShoppingCart";
 import CoinEx from "./components/Pages/CoinEx/CoinEx";
 import Coins from "./components/Pages/CoinEx/Coins";
@@ -22,7 +21,6 @@ import FormValidation from "./components/Pages/FormValidation";
 import HackerNews from "./components/Pages/HackerNews";
 import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 import AgeValidation from "./components/Pages/AgeValidation";
-import PokemonApi from "./components/Pages/PokemonApi";
 import ProductCardSlider from "./components/Pages/ProductCardSlider"; 
 import LeapYearChecker from "./components/Pages/LeapYearChecker";
 import GithubApi from "./components/Pages/GithubApi";
@@ -51,8 +49,6 @@ function App() {
 				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
 				<Route path="/FormValidation" element={ <FormValidation /> } />
 				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
-				<Route path="/MemeGenerator" element={ <MemeGenerator /> } />
-				<Route path="/PokemonApi" element={ <PokemonApi /> } />
 				<Route path="/ProductCardSlider" element={ <ProductCardSlider /> } />
 				<Route path="/AgeValidation" element={ <AgeValidation /> } />
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
@@ -61,7 +57,6 @@ function App() {
 				<Route path="/GithubApi" element={ <GithubApi /> } />
 				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />
 				<Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
-				
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />

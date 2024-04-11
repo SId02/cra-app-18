@@ -11,7 +11,7 @@ const LoginPageWithDefaultValue = () => {
     if (username === "admin" && password === "password") {
       setIsLoggedIn(true);
     } else {
-      setErrorMessage(" Invalid credentials Please Check USernames and Password ");
+      setErrorMessage(" Invalid Credentials Please Check USernames and Password ");
       setTimeout(() => {
         setErrorMessage('');
       }, 2000);
