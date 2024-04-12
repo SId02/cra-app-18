@@ -120,13 +120,7 @@ const PasswordGenerator = () => {
 										>
 											<input
 												type="checkbox"
-												className=" mr-2"
-												defaultChecked={symbolAllowed}
-												id="characterInput"
-												onChange={() => {
-													setSymbolAllowed((prev) => !prev);
-												}}
-											/>
+												className=" mr-2" defaultChecked={symbolAllowed} id="characterInput" onChange={() => {setSymbolAllowed((prev) => !prev);}}/>
 											Symbols
 										</label>
 									</div>

@@ -60,18 +60,17 @@ const CountryDetails = () => {
                             <div className="card-content">
                                 <div className="content">
     
-                                    <h2>countryData.name.common</h2>
-                                    <br />
-                                    <hr />
-                                    <p>Capital: countryData.capital</p>
-                                    <p>Region: countryData.region</p>
-                                    <p>Population: countryData.population</p>
-                                    {Array.isArray(countryData.languages) && (
-                                        <p>
-                                          Languages:{' '}
-                                          {countryData.languages.map((lang) => lang.name).join(', ')}
-                                        </p>
-                                      )}
+                                 <h2>{ countryData.name.common }</h2>
+                                    <br/> <br/> <hr/>
+                                  <p>Capital: {countryData.capital}</p>
+                                  <p>Region: {countryData.region}</p>
+                                  <p>Population: {countryData.population}</p>
+                                  {Array.isArray(countryData.languages) && (
+                                    <p>
+                                      Languages:
+                                      {countryData.languages.map((lang) => lang.name).join(', ')}
+                                    </p>
+                                  )}
                                 </div>
                             </div>
                         </div>
@@ -88,3 +87,6 @@ const CountryDetails = () => {
 };
 
 export default CountryDetails;
+
+
+

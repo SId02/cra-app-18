@@ -23,7 +23,7 @@ const SearchBar = ({ posts, setSearchResults }) => {
 							<p className="control">
 								<button className="button">
 									<span className="icon">
-										<i class="fa-solid fa-magnifying-glass"></i>
+										<i className="fa-solid fa-magnifying-glass"></i>
 									</span>
 								</button>
 							</p>

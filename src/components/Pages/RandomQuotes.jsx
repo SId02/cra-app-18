@@ -10,8 +10,8 @@ const RandomQuotes = () => {
 	return (
 		<>
 			<div className="p-5">
-				<div className="columns is-desktop  mt-5 has-text-centered">
-					<div className="column  is-6  is-half is-offset-one-quarter ">
+				<div className="columns is-desktop mt-5 has-text-centered">
+					<div className="column is-6 is-half is-offset-one-quarter ">
 						<div className="card">
 							<div className="card-content">
 								<div className="content">

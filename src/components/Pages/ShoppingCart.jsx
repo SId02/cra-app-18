@@ -25,7 +25,7 @@ function ShoppingCart() {
 
 	return (
 		<>
-			<div className="container	m-5">
+			<div className="container m-5">
 				<div className="columns is-multiline  m-1">
 					<div className="column is-8-desktop is-6-tablet has-background-light">
 					<Products state={state} dispatch={dispatch} />

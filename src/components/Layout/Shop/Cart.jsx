@@ -65,7 +65,7 @@ const Cart = ({ state, dispatch }) => {
 							)}
 						</tbody>
 					</table>
-					<h3 className="Title">Total :$ {total}</h3>
+					<h3 className="title">Total :$ {total}</h3>
 				</div>
 			</div>
 		</>

@@ -18,10 +18,8 @@ import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReduce
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 import CurrencyConverter from "./components/Pages/CurrencyConverter";
 import FormValidation from "./components/Pages/FormValidation";
-import HackerNews from "./components/Pages/HackerNews";
 import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 import AgeValidation from "./components/Pages/AgeValidation";
-import ProductCardSlider from "./components/Pages/ProductCardSlider"; 
 import LeapYearChecker from "./components/Pages/LeapYearChecker";
 import GithubApi from "./components/Pages/GithubApi";
 import LoginPageWithDefaultValue from "./components/Pages/LoginPageWithDefaultValue";
@@ -37,8 +35,7 @@ function App() {
 				<Route path="/Search" element={<Search />} />
 				<Route path="/Select" element={<Select />} />
 				<Route path="/RandomColorGenerator" element={<RandomColorGenerator />} />
-				<Route path="/RandomQuotes" element={<RandomQuotes />} />
-		
+				<Route path="/RandomQuotes" element={<RandomQuotes />} />		
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />
 				<Route path="/Counter" element={ <Counter /> } />
 				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />
@@ -49,10 +46,8 @@ function App() {
 				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
 				<Route path="/FormValidation" element={ <FormValidation /> } />
 				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
-				<Route path="/ProductCardSlider" element={ <ProductCardSlider /> } />
 				<Route path="/AgeValidation" element={ <AgeValidation /> } />
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
-				<Route path="/HackerNews" element={ <HackerNews /> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
 				<Route path="/GithubApi" element={ <GithubApi /> } />
 				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />

@@ -1,10 +1,4 @@
-
-// Populate data in table
-
-
-
 import React, { useState } from "react";
-
 const CapitalCities = () => {
   const [table, setTable] = useState("");
 

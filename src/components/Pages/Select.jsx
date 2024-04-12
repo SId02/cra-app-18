@@ -24,12 +24,9 @@ const Select = () => {
 
 	return (
 		<>
-			<br />
 			<div className="container p-5">
-				<h2 className="content has-text-centered is-size-3 "> Select Option | Review Rating | Year Calculator </h2>
+			<h2 className="content has-text-centered is-size-3">Select Option | Review Rating</h2>
 			</div>
-
-
 			<div className="container p-5">
 				<h3 className="content has-text-centered is-size-3 "> Select Option </h3>
 				<div className="columns is-desktop  is-centered">
