@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import DataInTable from "../Layout/DataInTable/DataInTable";
 import ReveiwRating from "../Layout/ReviewRating/ReviewRating";
 const fullDev = [
 	{
@@ -9,12 +10,12 @@ const fullDev = [
 	{
 		name: "BackEnd",
 		value: "BE",
-		framework: ["Java", "Node", "Php", "Python"],
+		framework: ["Java", "Node", "Php", "Python",".Net"],
 	},
 	{
 		name: "DataBase",
 		value: "DB",
-		framework: ["Mysql", "MS Sql", "Oracle", "MongoDB"],
+		framework: ["Mysql", "MS Sql Server", "Oracle", "MongoDB"],
 	},
 ];
 const Select = () => {
@@ -74,6 +75,12 @@ const Select = () => {
 					</div>
 				</div>
 			</div>
+			<br />
+		
+			<br />
+			<hr />
+			<DataInTable/>
+			<hr />
 			<br />
 			<hr />
 			<br />

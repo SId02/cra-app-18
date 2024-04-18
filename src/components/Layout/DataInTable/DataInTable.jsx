@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const CapitalCities = () => {
+const DataInTable = () => {
   const [table, setTable] = useState("");
 
   const cityListJSON = {
@@ -34,9 +34,9 @@ const CapitalCities = () => {
   const buildCitiesList = () => {
     const cities = cityListJSON.cities;
     let mytable = (
-      <table className="table is-fullwidth">
+      <table className="table is-fullwidth is-centered">
         <thead>
-          <tr className="text-center">
+          <tr className="has-text-centered">
             <th>#</th>
             <th>City</th>
             <th>State</th>
@@ -64,7 +64,7 @@ const CapitalCities = () => {
       <div className="container pt-5 has-text-centered">
         <div className="container-fluid">
           <main>
-            <button className="btn btn-primary" onClick={buildCitiesList}>
+            <button className="button is-link" onClick={buildCitiesList}>
               Display Capital Cities
             </button>
             <div id="table" className="p-5">
@@ -77,4 +77,4 @@ const CapitalCities = () => {
   );
 };
 
-export default CapitalCities;
+export default DataInTable;
