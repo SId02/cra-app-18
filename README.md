@@ -1,13 +1,13 @@
 
 
-    [Live](https://cra-app-18.vercel.app/)  
+    [Live Preview](https://cra-app-18.vercel.app/)  
 
-
+  
 ## Create React Js App
    
-   npx create-react-app my-app
-   cd my-app
-   npm start
+    npx create-react-app my-app
+    cd my-app
+    npm start
 
 
 ##	React JS	18
@@ -38,7 +38,7 @@
 
  - Icons use are free and open source icons
 
-   Some icons are taken from Bootstrap Icons ,Font Awesome icons,Feather Icons
+ - Some icons are taken from Bootstrap Icons ,Font Awesome icons,Feather Icons
 
 
 

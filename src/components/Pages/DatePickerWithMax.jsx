@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-
+import TogglePasswordVisibility from './TogglePasswordVisibility';
 const DatePickerWithMax = () => {
  
 	const [date, setDate] = useState('');
@@ -56,7 +56,10 @@ const DatePickerWithMax = () => {
 							</div>
 						</div>
              </div>
-        </section>
+		  </section>
+		  <section>
+			  <TogglePasswordVisibility/>
+		  </section>
 
       </>
   )
