@@ -41,6 +41,15 @@
  - Some icons are taken from Bootstrap Icons ,Font Awesome icons,Feather Icons
 
 
+#### List 
 
-
+ - Search and Pagination
+ - Currency Converter
+ - Counter
+ - Toggle Password Visibility 
+ - Password Generator
+ - Select 
+ - Random Color Generator
+ - Form Validation
+ - 
 

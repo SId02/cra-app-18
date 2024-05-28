@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TipCalculator from "../Layout/TipCalculator/TipCalculator";
-//import BmiCalculator from "../Layout/BmiCalculator/BmiCalculator";
+import DarkLightModeToggle from "./DarkLightModeToggle"
 import CountryDetails from "../Layout/CountryDetails/CountryDetails";
 function Counter() {
 	const [count, setCount] = useState(0);
@@ -24,8 +24,6 @@ function Counter() {
 	
 	return (
 		<>
-			
-
 			<div className="container has-text-centered p-5">
 				<h3 className="is-size-4"> Counter | Tip Calculator</h3>
 			</div>
@@ -59,17 +57,14 @@ function Counter() {
 			<br />
 			<br />
 			<br />
-			<br />
-			<br />
-			<br />
 			<hr />
 							<div className="container">
 										<TipCalculator/>
 							</div>	
 			<hr />
-							{/* <div className="container">
-										<BmiCalculator/>
-							</div>	 */}
+							 <div className="container">
+										<DarkLightModeToggle/>
+							</div>	
  							<div className="container">
 										<CountryDetails/>
 							</div>	
