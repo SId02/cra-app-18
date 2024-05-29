@@ -21,7 +21,7 @@ import FormValidation from "./components/Pages/FormValidation";
 import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 import AgeValidation from "./components/Pages/AgeValidation";
 import LeapYearChecker from "./components/Pages/LeapYearChecker";
-import GithubApi from "./components/Pages/GithubApi";
+//import GithubApi from "./components/Pages/GithubApi";
 import LoginPageWithDefaultValue from "./components/Pages/LoginPageWithDefaultValue";
 import LoginPageWithAPI from "./components/Pages/LoginPageWithAPI";
 function App() {
@@ -49,7 +49,7 @@ function App() {
 				<Route path="/AgeValidation" element={ <AgeValidation /> } />
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
-				<Route path="/GithubApi" element={ <GithubApi /> } />
+					{/*<Route path="/GithubApi" element={ <GithubApi /> } />*/}
 				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />
 				<Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
 				<Route path="*" element={<NotFound />} />
