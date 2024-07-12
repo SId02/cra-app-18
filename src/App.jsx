@@ -21,13 +21,14 @@ import FormValidation from "./components/Pages/FormValidation";
 import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 import AgeValidation from "./components/Pages/AgeValidation";
 import LeapYearChecker from "./components/Pages/LeapYearChecker";
-//import GithubApi from "./components/Pages/GithubApi";
 import LoginPageWithDefaultValue from "./components/Pages/LoginPageWithDefaultValue";
 import LoginPageWithAPI from "./components/Pages/LoginPageWithAPI";
+import GithubUserProfileFinder from "./components/Pages/GithubUserProfileFinder";
+import Typeahead from "./components/Pages/Typeahead";
 function App() {
-	return (
-		<>
-			<Navbar />
+  return (
+    <>
+     <Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/DatePicker" element={<DatePicker />} />
@@ -49,14 +50,16 @@ function App() {
 				<Route path="/AgeValidation" element={ <AgeValidation /> } />
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
-					{/*<Route path="/GithubApi" element={ <GithubApi /> } />*/}
+			  {/*<Route path="/GithubApi" element={ <GithubApi /> } />*/ }
+			  <Route path="/GithubApi" element={ <GithubUserProfileFinder /> } />
 				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />
-				<Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
+			  <Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
+			  	  <Route path="/Typeahead" element={ <Typeahead /> } />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
-		</>
-	);
+    </>
+  )
 }
 
-export default App;
+export default App
