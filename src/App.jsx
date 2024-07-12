@@ -50,11 +50,11 @@ function App() {
 				<Route path="/AgeValidation" element={ <AgeValidation /> } />
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
-			  {/*<Route path="/GithubApi" element={ <GithubApi /> } />*/ }
-			  <Route path="/GithubApi" element={ <GithubUserProfileFinder /> } />
+				{/*<Route path="/GithubApi" element={ <GithubApi /> } />*/ }
+				<Route path="/GithubApi" element={ <GithubUserProfileFinder /> } />
 				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />
-			  <Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
-			  	  <Route path="/Typeahead" element={ <Typeahead /> } />
+				<Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
+				<Route path="/Typeahead" element={ <Typeahead /> } />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
