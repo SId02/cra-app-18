@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TestimonialSlider from "../Layout/TestimonialSlider/TestimonialSlider"
 import axios from "axios";
 
 const RandomQuotes = () => {
@@ -31,6 +32,9 @@ const RandomQuotes = () => {
 				</div>
 			</div>
 			<br />
+
+
+			<TestimonialSlider/>
 		</>
 	);
 };

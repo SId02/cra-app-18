@@ -51,5 +51,9 @@
  - Select 
  - Random Color Generator
  - Form Validation
- - 
+ - Typeahead
+ - CountryDetails
+ - Github User Profile Finder
+ - Slider
+ -  
 

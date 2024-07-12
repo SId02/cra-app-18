@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -43,6 +43,7 @@ const Navbar = () => {
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/CurrencyConverter">Currency Converter</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/DataFetchUsingUseReducer">Data Fetch</NavLink>
                                     <NavLink className="navbar-item navbar-item-dropdown" to="/GithubApi">GithubApi</NavLink>
+                                    <NavLink className="navbar-item navbar-item-dropdown" to="/Typeahead">Typeahead</NavLink>
                                 </div>
                             </div>   
                     </div>
