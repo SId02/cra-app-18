@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import  { useState } from "react";
+import TrafficSignal from "../Layout/TrafficSignal";
 const FormValidation = () => {
 	const [username, setusername] = useState("");
 	const [email, setEmail] = useState("");
@@ -113,6 +113,15 @@ const FormValidation = () => {
 					<div className="column is-4"></div>
 				</div>
 			</div>
+			<br />
+			<br />
+			<hr />
+			<br />
+			<br />
+			<TrafficSignal />
+			<hr />
+			<br />
+			<br />
 		</>
 	);
 };

@@ -10,6 +10,9 @@ const RandomQuotes = () => {
 	};
 	return (
 		<>
+			<div className="container has-text-centered p-5 ">
+				<h3 className="is-size-4"> Random Quotes </h3>
+			</div>
 			<div className="p-5">
 				<div className="columns is-desktop mt-5 has-text-centered">
 					<div className="column is-6 is-half is-offset-one-quarter ">
@@ -24,7 +27,7 @@ const RandomQuotes = () => {
 								
 								<button className="button mb-3" onClick={handleQuote}>
 									<span className="icon p-5">Next</span>
-									<i class="fa-solid fa-caret-right"></i>
+									<i className="fa-solid fa-caret-right"></i>
 								</button>
 							</div>
 						</div>
@@ -32,9 +35,11 @@ const RandomQuotes = () => {
 				</div>
 			</div>
 			<br />
+			<hr />
+			<TestimonialSlider />
+			<br />
+			<hr />
 
-
-			<TestimonialSlider/>
 		</>
 	);
 };
