@@ -26,40 +26,48 @@ import LoginPageWithAPI from "./components/Pages/LoginPageWithAPI";
 import GithubUserProfileFinder from "./components/Pages/GithubUserProfileFinder";
 import Typeahead from "./components/Pages/Typeahead";
 function App() {
-  return (
-    <>
-     <Navbar />
+	return (
+		<>
+			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/DatePicker" element={<DatePicker />} />
 				<Route path="/Pagination" element={<Pagination />} />
 				<Route path="/Search" element={<Search />} />
 				<Route path="/Select" element={<Select />} />
-				<Route path="/RandomColorGenerator" element={<RandomColorGenerator />} />
-				<Route path="/RandomQuotes" element={<RandomQuotes />} />		
+				<Route
+					path="/RandomColorGenerator"
+					element={<RandomColorGenerator />}
+				/>
+				<Route path="/RandomQuotes" element={<RandomQuotes />} />
 				<Route path="/ShoppingCart" element={<ShoppingCart />} />
-				<Route path="/Counter" element={ <Counter /> } />
-				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />
+				<Route path="/Counter" element={<Counter />} />
+				<Route path="/PasswordGenerator" element={<PassowrdGenerators />} />
 				<Route path="/CoinEx" element={<CoinEx />}>
 					<Route path="Coins" element={<Coins />} />
 					<Route path="Exchanges" element={<Exchanges />} />
 				</Route>
-				<Route path="/DataFetchUsingUseReducer" element={ <DataFetchUsingUseReducer /> } />
-				<Route path="/FormValidation" element={ <FormValidation /> } />
-				<Route path="/CurrencyConverter" element={ <CurrencyConverter /> } />
-				<Route path="/AgeValidation" element={ <AgeValidation /> } />
-				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
+				<Route
+					path="/DataFetchUsingUseReducer"
+					element={<DataFetchUsingUseReducer />}
+				/>
+				<Route path="/FormValidation" element={<FormValidation />} />
+				<Route path="/CurrencyConverter" element={<CurrencyConverter />} />
+				<Route path="/AgeValidation" element={<AgeValidation />} />
+				<Route path="/LeapYearChecker" element={<LeapYearChecker />} />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
-			  {/*<Route path="/GithubApi" element={ <GithubApi /> } />*/ }
-			  <Route path="/GithubApi" element={ <GithubUserProfileFinder /> } />
-				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />
-			  <Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
-			  	  <Route path="/Typeahead" element={ <Typeahead /> } />
+				<Route path="/GithubApi" element={<GithubUserProfileFinder />} />
+				<Route
+					path="/LoginPageWithDefaultValue"
+					element={<LoginPageWithDefaultValue />}
+				/>
+				<Route path="/LoginPageWithAPI" element={<LoginPageWithAPI />} />
+				<Route path="/Typeahead" element={<Typeahead />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
-    </>
-  )
+		</>
+	);
 }
 
-export default App
+export default App;

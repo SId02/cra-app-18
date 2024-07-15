@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import TrafficSignal from "../Layout/TrafficSignal";
+// import TrafficSignal from "../Layout/TrafficSignal/TrafficSignal";
 const FormValidation = () => {
 	const [username, setusername] = useState("");
 	const [email, setEmail] = useState("");
@@ -118,7 +118,7 @@ const FormValidation = () => {
 			<hr />
 			<br />
 			<br />
-			<TrafficSignal />
+			{/* <TrafficSignal /> */}
 			<hr />
 			<br />
 			<br />

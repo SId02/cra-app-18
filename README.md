@@ -1,6 +1,4 @@
-
-
-    [Live Preview](https://cra-app-18.vercel.app/)  
+[Live Preview](https://cra-app-18.vercel.app/)  
 
   
 ## Create React Js App
