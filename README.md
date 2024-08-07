@@ -1,4 +1,7 @@
-[Live Preview](https://cra-app-18.vercel.app/)  
+
+### Preview
+
+    [Live Preview](https://cra-app-18.vercel.app/)  
 
   
 ## Create React Js App
@@ -41,17 +44,32 @@
 
 #### List 
 
- - Search and Pagination
- - Currency Converter
- - Counter
- - Toggle Password Visibility 
- - Password Generator
- - Select 
- - Random Color Generator
- - Form Validation
- - Typeahead
- - CountryDetails
- - Github User Profile Finder
- - Slider
- -  
+- Password Generator
+- Pagination
+- Counter
+- LoginPageWithDefault
+- Random Color Generator
+- Shop
+- Coin Exchange
+- Date Picker
+- Date Picker Max
+- Form Validation
+- Search
+- Select
+- Random Quotes
+- Age Validation
+- Leap Year Checker
+- LoginPageWithAPI
+- Currency Converter
+- Data Fetch
+- Github API
+- Typeahead
+- Tip Calulator
+- LightToDarkMode
+- Country Detail    
+- Year Calculator
+- Toggle Password Visibility
+- Populate Data in table
+- Testimonial Slider
+- OTP Checker
 
