@@ -1,3 +1,5 @@
+
+// Post.jsx
 const Post = ({ post }) => {
 	return (
 		<>

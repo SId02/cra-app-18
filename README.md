@@ -10,6 +10,29 @@
     cd my-app
     npm start
 
+### Migrate from create-react-app to Vite
+
+ Step One: Setting the Stage with Vite Installation
+
+- installing Vite and React-related libraries as development dependencies. Run the following commands in   
+  your project’s root directory:
+
+        npm install vite @vitejs/plugin-react --save-dev
+        npm uninstall react-scripts
+
+Step Two: Updating package.json for Vite Commands
+
+ the “scripts” section of your package.json file to use Vite’s commands:
+
+"scripts": {
+  "start": "vite",
+  "build": "vite build",
+  "serve": "vite preview"
+},
+Step Three: Renaming File Extensions to .jsx or .tsx
+
+
+- https://coreui.io/blog/how-to-migrate-create-react-app-to-vite/
 
 ##	React JS	18
 

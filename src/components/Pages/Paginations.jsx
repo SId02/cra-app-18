@@ -1,3 +1,4 @@
+//Paginations.jsx
 import { getPosts } from '../Services/Api-User';
 import { useState, useEffect } from 'react';
 import Post from '../Layout/Paginates/Post';
