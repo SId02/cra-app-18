@@ -10,7 +10,7 @@
     cd my-app
     npm start
 
-### Migrate from create-react-app to Vite
+### Migrate from create-react-app to Vite JS
 
  Step One: Setting the Stage with Vite Installation
 

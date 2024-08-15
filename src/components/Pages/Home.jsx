@@ -71,7 +71,7 @@ const Home = () => {
 							</div>
 							<div className="column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold">
-									<p></p>
+									<p>Vite JS</p>
 								</div>
 							</div>
 							<div className="column is-3 has-text-centered">
