@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import OTPChecker from "../Layout/OTPChecker/OTPChecker";
+import BmiCalculator from "./BmiCalculator";
 
 const AgeValidation = () => {
 	const [age, setAge] = useState("");
@@ -59,7 +60,7 @@ const AgeValidation = () => {
 
 		    <hr />
 
-			
+			<BmiCalculator/>
 
 
 		</>
