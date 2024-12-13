@@ -25,6 +25,7 @@ import LoginPageWithDefaultValue from "./components/Pages/LoginPageWithDefaultVa
 import LoginPageWithAPI from "./components/Pages/LoginPageWithAPI";
 import GithubUserProfileFinder from "./components/Pages/GithubUserProfileFinder";
 import Typeahead from "./components/Pages/Typeahead";
+import PokemonDash from "./components/Pages/PokemonDash";
 function App() {
   return (
     <>
@@ -53,7 +54,8 @@ function App() {
 				<Route path="/GithubApi" element={ <GithubUserProfileFinder /> } />
 				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />
 				<Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
-				<Route path="/Typeahead" element={ <Typeahead /> } />
+			  <Route path="/Typeahead" element={ <Typeahead /> } />
+			  <Route path="/PokemonDash" element={ <PokemonDash /> } />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
