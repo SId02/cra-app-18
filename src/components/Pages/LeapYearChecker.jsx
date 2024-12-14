@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import MaskedNumber from "./MaskedNumber";
+import CreditCard from "./CreditCard";
 const LeapYearChecker = () => {
     const [year, setYear] = useState('');
     const [message, setMessage] = useState('');
@@ -35,6 +36,14 @@ const LeapYearChecker = () => {
                                 </div>
                     </div> 
             </section>
+
+
+            <div>
+            <MaskedNumber/>
+            </div>
+            <div>
+                <CreditCard/>
+            </div>
         </>
     );
    }

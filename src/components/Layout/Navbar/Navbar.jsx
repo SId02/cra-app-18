@@ -156,6 +156,7 @@ const Navbar = () => {
 									>
 										Typeahead
 									</NavLink>
+									<NavLink className="navbar-item" to="/MultiLang">MultiLang</NavLink>
 								</div>
 							</div>
 						</div>

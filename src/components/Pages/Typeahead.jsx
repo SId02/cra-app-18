@@ -35,7 +35,7 @@ const Typeahead = () => {
         type="text"
         value={searchTerm}
         onChange={handleSearch}
-        placeholder="Search for a country"
+        placeholder="Type Country Name"
         className="input"
       />
 

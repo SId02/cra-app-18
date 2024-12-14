@@ -26,6 +26,7 @@ import LoginPageWithAPI from "./components/Pages/LoginPageWithAPI";
 import GithubUserProfileFinder from "./components/Pages/GithubUserProfileFinder";
 import Typeahead from "./components/Pages/Typeahead";
 import PokemonDash from "./components/Pages/PokemonDash";
+import MultiLang from "./components/Pages/MultiLang";
 function App() {
   return (
     <>
@@ -57,6 +58,7 @@ function App() {
 			  <Route path="/Typeahead" element={ <Typeahead /> } />
 			  <Route path="/PokemonDash" element={ <PokemonDash /> } />
 				<Route path="*" element={<NotFound />} />
+				<Route path="/MultiLang" element={ <MultiLang /> } />
 			</Routes>
 			<Footer />
     </>
