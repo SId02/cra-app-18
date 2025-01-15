@@ -1,0 +1,52 @@
+.progressbar {
+  position: relative;
+  margin-top: 50px;
+  width: 50%;
+  height: 3px;
+  background-color: #fdba2c;
+}
+
+.bar {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  text-align: center;
+}
+
+.bar:nth-child(1) {
+  background-color: #da4733;
+  animation: loading 3s linear infinite;
+}
+
+.bar:nth-child(2) {
+  background-color: #3b78e7;
+  animation: loading 3s linear 1s infinite;
+}
+
+.bar:nth-child(3) {
+  background-color: #fdba2c;
+  animation: loading 4s linear 3s infinite;
+}
+
+@keyframes loading {
+  from {
+    left: 40%;
+    width: 0;
+    z-index: 100;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.progressbar.loading .bar {
+  animation-play-state: running;
+}
+
+.progressbar:not(.loading) .bar {
+  animation-play-state: paused;
+}

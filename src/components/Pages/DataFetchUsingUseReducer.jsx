@@ -1,6 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import axios from "axios";
-
+import Loader from "./Loader";
 const initialState = {
 	loading: true,
 	error: "",
@@ -40,6 +40,7 @@ function DataFetchUsingUseReducer() {
 			});
 	}, []);
 	return (
+		<>
 		<div>
 			<section className="container">
 				<div className="columns is-desktop mt-5 has-text-centered">
@@ -60,6 +61,19 @@ function DataFetchUsingUseReducer() {
             <br />
             <br />
 		</div>
+		<hr/>
+		<br />
+            <br />
+            <br />
+            <br />
+			  <div className="container has-text-centered">  
+                <Loader/>
+			   </div>
+            <br />
+            <br />
+            <br />
+            <br />
+		</>
 	);
 }
 
