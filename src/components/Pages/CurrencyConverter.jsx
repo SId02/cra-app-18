@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import DigitalClock from "./DigitalClock.jsx";
+import StopWatch from "./StopWatch.jsx";
 import axios from "axios";
 
 const CurrencyConverter = () => {
@@ -132,7 +134,28 @@ const CurrencyConverter = () => {
 					</section>
 				</div>
 			</section>
-			
+			<br />
+			<hr/>
+			<br/>
+					{/*  */}
+					<div className="container p-5">
+						<div className="columns is-centered">
+							<div className="column is-half">
+								<div className="box has-background-light">
+									<h2 className="subtitle has-text-centered">Digital Clock</h2>
+									<DigitalClock />
+								</div>
+							</div>
+
+							<div className="column is-half">
+								<div className="box has-background-warning">
+									<h2 className="subtitle has-text-centered">StopWatch</h2>
+									<StopWatch /> 
+								</div>
+							</div>
+						</div>
+					</div>
+					{/*  */}
 		</>
 	);
 };
