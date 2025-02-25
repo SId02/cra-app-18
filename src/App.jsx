@@ -27,11 +27,12 @@ import GithubUserProfileFinder from "./components/Pages/GithubUserProfileFinder"
 import Typeahead from "./components/Pages/Typeahead";
 import PokemonDash from "./components/Pages/PokemonDash";
 import MultiLang from "./components/Pages/MultiLang";
+
 function App() {
   return (
     <>
      <Navbar />
-			<Routes>
+		  <Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/DatePicker" element={<DatePicker />} />
 				<Route path="/Pagination" element={<Pagination />} />

@@ -12,10 +12,10 @@ const Navbar = () => {
 							React App
 						</NavLink>
 						<NavLink
-							onClick={() => {
+							onClick={ () => {
 								setisActive(!isActive);
-							}}
-							className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
+							} }
+							className={ `navbar-burger burger ${isActive ? "is-active" : ""}` }
 							role="button"
 							aria-label="menu"
 							aria-expanded="false"
@@ -25,21 +25,18 @@ const Navbar = () => {
 							<span aria-hidden="true"></span>
 						</NavLink>
 					</div>
-					<div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
+					<div className={ `navbar-menu ${isActive ? "is-active" : ""}` }>
 						<div className="navbar-end">
-							<NavLink className="navbar-item" to="/">
+							<NavLink className="navbar-item is-selected" to="/">
 								Home
-							</NavLink>
-							<NavLink className="navbar-item" to="/pagination">
-								Pagination
-							</NavLink>
-							<NavLink className="navbar-item" to="/PasswordGenerator">
-								Password Generators
 							</NavLink>
 							<div className="navbar-item has-dropdown is-hoverable is-multiple">
 								<NavLink className="navbar-link"> More </NavLink>
-								<div className="navbar-dropdown is-multiple">
-									<NavLink
+								<div className="navbar-dropdown ">
+									<div className="columns">
+											{/* 1 st column */}
+										<div className="column">
+										<NavLink
 										className="navbar-item navbar-item-dropdown"
 										to="/Counter"
 									>
@@ -47,27 +44,15 @@ const Navbar = () => {
 									</NavLink>
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
-										to="/LoginPageWithDefaultValue"
+										to="/CoinEx"
 									>
-										LoginPageWithDefault
-									</NavLink>
-									<NavLink
-										className="navbar-item navbar-item-dropdown"
-										to="/RandomColorGenerator"
-									>
-										Random Color Generator
+										Coin Ex
 									</NavLink>
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
 										to="/ShoppingCart"
 									>
 										Shop
-									</NavLink>
-									<NavLink
-										className="navbar-item navbar-item-dropdown"
-										to="/CoinEx"
-									>
-										Coin Ex
 									</NavLink>
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
@@ -81,23 +66,34 @@ const Navbar = () => {
 									>
 										Date Picker Max
 									</NavLink>
-									<NavLink
-										className="navbar-item navbar-item-dropdown"
-										to="/FormValidation"
-									>
-										Form Validation
-									</NavLink>
+										<NavLink className="navbar-item" to="/MultiLang">MultiLang</NavLink>
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
 										to="/Search"
 									>
 										Search
-									</NavLink>
-									<NavLink
+											</NavLink>
+											<NavLink
 										className="navbar-item navbar-item-dropdown"
 										to="/Select"
 									>
 										Select
+									</NavLink>
+									<NavLink
+										className="navbar-item navbar-item-dropdown"
+										to="/DataFetchUsingUseReducer"
+									>
+										Data Fetch
+											</NavLink>
+											<NavLink className="navbar-item" to="/NumberAnalyzer">NumberAnalyzer</NavLink>
+										</div>
+										{/* 2 nd column */}
+										<div className="column">
+										<NavLink
+										className="navbar-item navbar-item-dropdown"
+										to="/FormValidation"
+									>
+										Form Validation
 									</NavLink>
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
@@ -109,7 +105,6 @@ const Navbar = () => {
 										className="navbar-item navbar-item-dropdown"
 										to="/AgeValidation"
 									>
-										{" "}
 										Age Validation
 									</NavLink>
 									<NavLink
@@ -129,15 +124,14 @@ const Navbar = () => {
 										to="/CurrencyConverter"
 									>
 										Currency Converter
-									</NavLink>
-									<NavLink
+											</NavLink>
+											<NavLink
 										className="navbar-item navbar-item-dropdown"
-										to="/DataFetchUsingUseReducer"
+										to="/Typeahead"
 									>
-										Data Fetch
-									</NavLink>
-
-									<NavLink
+										Typeahead
+											</NavLink>
+											<NavLink
 										className="navbar-item navbar-item-dropdown"
 										to="/PokemonDash"
 									>
@@ -146,23 +140,42 @@ const Navbar = () => {
 
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
-										to="/GithubApi"
-									>
-										GithubApi
-									</NavLink>
-									<NavLink
-										className="navbar-item navbar-item-dropdown"
-										to="/Typeahead"
-									>
-										Typeahead
-									</NavLink>
-									<NavLink className="navbar-item" to="/MultiLang">MultiLang</NavLink>
+												to="/GithubApi">GithubApi</NavLink>
+											
+											<NavLink className="navbar-item" to="/NumberConverter">NumberConverter</NavLink>
+										</div>
+									</div>
+									<NavLink className="navbar-item navbar-item-dropdown" to="/LoginPageWithDefaultValue">LoginPageWithDefault</NavLink>
+						<NavLink className="navbar-item navbar-item-dropdown" to="/RandomColorGenerator">Random Color Generator</NavLink>
+						<NavLink className="navbar-item" to="/ProductListPaginations">ProductListPaginations</NavLink>
+						<NavLink className="navbar-item" to="/ProductListSearchSortFilter">ProductListSearchSortFilter</NavLink>
 								</div>
 							</div>
+							<NavLink className="navbar-item" to="/pagination">
+								Pagination
+							</NavLink>
+							<NavLink className="navbar-item" to="/PasswordGenerator">
+								Password Generators
+							</NavLink>
+							<NavLink className="navbar-item" to="/InfiniteScroll">Infinite Scroll</NavLink>
 						</div>
 					</div>
 				</div>
 			</nav>
+
+
+		
+			
+			{/* <NavLink className="navbar-item" to="/NumberAnalyzer">NumberAnalyzer</NavLink>
+			<NavLink className="navbar-item" to="/NumberConverter">NumberConverter</NavLink>
+			<NavLink className="navbar-item" to="/ProductListPaginations">ProductListPaginations</NavLink>
+			<NavLink className="navbar-item" to="/ProductListSearchSortFilter">ProductListSearchSortFilter</NavLink>
+			<NavLink className="navbar-item" to="/numberanalyzer">NumberAnalyzer</NavLink>
+			<NavLink className="navbar-item" to="/numberanalyzer">NumberAnalyzer</NavLink>
+			<NavLink className="navbar-item" to="/numberanalyzer">NumberAnalyzer</NavLink>
+			<NavLink className="navbar-item" to="/numberanalyzer">NumberAnalyzer</NavLink>
+			<NavLink className="navbar-item" to="/numberanalyzer">NumberAnalyzer</NavLink>
+			<NavLink className="navbar-item" to="/numberanalyzer">NumberAnalyzer</NavLink> */}
 		</>
 	);
 };

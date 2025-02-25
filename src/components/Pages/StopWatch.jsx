@@ -1,7 +1,4 @@
-
 import React, { useState, useEffect } from 'react';
-
-
 const StopWatch = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [seconds, setSeconds] = useState(0);
@@ -67,23 +64,20 @@ const StopWatch = () => {
           <div className="buttons is-centered">
             <button 
               className={`button ${isRunning ? 'is-warning' : 'is-success'}`} 
-              onClick={handleStartStop}
-            >
+              onClick={handleStartStop}>
               {isRunning ? 'Pause' : 'Start'}
             </button>
             
             <button 
               className="button is-info" 
               onClick={handleLap}
-              disabled={!isRunning}
-            >
+              disabled={!isRunning}>
               Lap
             </button>
             
             <button 
               className="button is-danger" 
-              onClick={handleReset}
-            >
+              onClick={handleReset}>
               Reset
             </button>
           </div>

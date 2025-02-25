@@ -1,5 +1,6 @@
 import  { useState } from "react";
-// import TrafficSignal from "../Layout/TrafficSignal/TrafficSignal";
+import WordCounter from "../Pages/WordCounter";
+import TrafficSignal from "../Layout/TrafficSignal/TrafficSignal";
 const FormValidation = () => {
 	const [username, setusername] = useState("");
 	const [email, setEmail] = useState("");
@@ -115,10 +116,11 @@ const FormValidation = () => {
 			</div>
 			<br />
 			<br />
+			<WordCounter/>
 			<hr />
 			<br />
 			<br />
-			{/* <TrafficSignal /> */}
+		    <TrafficSignal /> 
 			<hr />
 			<br />
 			<br />

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import MaskedNumber from "./MaskedNumber";
-import CreditCard from "./CreditCard";
 const LeapYearChecker = () => {
     const [year, setYear] = useState('');
     const [message, setMessage] = useState('');
-  
+
      const checkLeapYear = () => {
         const isLeapYear = new Date(year, 1, 29).getMonth() === 1;
                 const messageText = isLeapYear
@@ -12,8 +11,7 @@ const LeapYearChecker = () => {
                 : `The year ${year} is not a leap year.`;
         setMessage(messageText);
      };
-   
-   
+
     return (
         <>
             <section>
@@ -36,14 +34,10 @@ const LeapYearChecker = () => {
                                 </div>
                     </div> 
             </section>
-
-
             <div>
             <MaskedNumber/>
             </div>
-            <div>
-                <CreditCard/>
-            </div>
+            
         </>
     );
    }

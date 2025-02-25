@@ -1,0 +1,41 @@
+
+.traffic-signal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* Distribute space evenly */
+  height: 250px; /* Increased height for better spacing */
+  width: 120px;  /* Adjusted width */
+  border: 2px solid #333; /* Darker border */
+  border-radius: 15px;
+  background-color: #222; /* Dark background */
+  padding: 15px;
+  margin: 20px auto; /* Center the signal within the box */
+}
+
+.signal {
+  width: 60px;  /* Adjusted size */
+  height: 60px; /* Adjusted size */
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.red-signal {
+  background-color: #ff4136; /* A bit brighter red */
+  box-shadow: 0 0 10px #ff4136; /* Add glow effect */
+}
+
+.yellow-signal {
+  background-color: #ffdc00; /* A bit brighter yellow */
+  box-shadow: 0 0 10px #ffdc00; /* Add glow effect */
+}
+
+.green-signal {
+  background-color: #2ecc40; /* A bit brighter green */
+  box-shadow: 0 0 10px #2ecc40; /* Add glow effect */
+}
+
+.signal.active {
+  opacity: 1;
+}
