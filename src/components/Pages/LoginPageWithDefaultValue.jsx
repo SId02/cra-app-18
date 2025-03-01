@@ -28,7 +28,8 @@ const LoginPageWithDefaultValue = () => {
         {isLoggedIn ? (
           <section className="hero is-link">
             <div className="hero-body">
-              <p className="title has-text-centered">Welcome {username}</p>
+              <p className="title has-text-centered">Welcome { username }</p>
+              
               <button className="button" onClick={handleLogout}>Logout</button>
             </div>
           </section>

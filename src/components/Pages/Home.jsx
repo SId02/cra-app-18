@@ -112,77 +112,47 @@ const Home = () => {
 									<div className="columns is-multiline is-centered mb-5 pb-5">
 											<div className="column is-3 has-text-centered">
 												<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">Word Counter</Link>
+													<Link to="/WordCounter">Word Counter</Link>
 												</div>
 											</div>
 											<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">React JS 18</Link>
+													<Link to="/PokemonDash">Pokemon Dash</Link>
 													</div>
 											</div>
 											<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">React JS 18</Link>
+													<Link to="/GithubApi">Github User Profile Finder</Link>
 													</div>
 											</div>
 											<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">React JS 18</Link>
+													<Link to="/DigitalClock">Digital Clock</Link>
 													</div>
 											</div>
 											<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">React JS 18</Link>
+													<Link to="/StopWatch">Stop Watch</Link>
 													</div>
-											</div>
-											<div className="column is-3 has-text-centered">
+						</div>
+													<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">React JS 18</Link>
-													</div>
-											</div>
-											<div className="column is-3 has-text-centered">
-													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">React JS 18</Link>
-													</div>
-											</div>
-											<div className="column is-3 has-text-centered">
-													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">React JS 18</Link>
-													</div>
-											</div>
-											<div className="column is-3 has-text-centered">
-													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-														<p>React JS 18</p>
+													<Link to="/GradientColorGenerator">Gradient Color Generator</Link>
 													</div>
 											</div>
 											{/* <div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-														<p>React JS 18</p>
+													<Link to="/GradientColorGenerator">Gradient Color Generator</Link>
 													</div>
 											</div>
 											<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-														<p>React JS 18</p>
+													<Link to="/">React JS 18</Link>
 													</div>
 											</div>
 											<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-														<p>React JS 18</p>
-													</div>
-											</div>
-											<div className="column is-3 has-text-centered">
-													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-														<p>React JS 18</p>
-													</div>
-											</div>
-											<div className="column is-3 has-text-centered">
-													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-														<p>React JS 18</p>
-													</div>
-											</div>
-											<div className="column is-3 has-text-centered">
-													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-														<p>React JS 18</p>
+													<Link to="/">React JS 18</Link>
 													</div>
 											</div>
 											<div className="column is-3 has-text-centered">
@@ -190,6 +160,7 @@ const Home = () => {
 														<p>React JS 18</p>
 													</div>
 											</div> */}
+											
 									</div>
 						</div>
 			</section>

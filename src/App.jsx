@@ -27,7 +27,11 @@ import GithubUserProfileFinder from "./components/Pages/GithubUserProfileFinder"
 import Typeahead from "./components/Pages/Typeahead";
 import PokemonDash from "./components/Pages/PokemonDash";
 import MultiLang from "./components/Pages/MultiLang";
-
+import InfiniteScroll from "./components/Pages/InfiniteScroll";
+import WordCounter from "./components/Pages/WordCounter";
+import DigitalClock from "./components/Pages/DigitalClock";
+import StopWatch from "./components/Pages/StopWatch";
+import GradientColorGenerator from "./components/Pages/GradientColorGenerator";
 function App() {
   return (
     <>
@@ -60,6 +64,12 @@ function App() {
 			  <Route path="/PokemonDash" element={ <PokemonDash /> } />
 				<Route path="*" element={<NotFound />} />
 				<Route path="/MultiLang" element={ <MultiLang /> } />
+			  <Route path="/InfiniteScroll" element={ <InfiniteScroll /> } />
+			  <Route path="/WordCounter" element={ <WordCounter /> } />
+			  <Route path="/DigitalClock" element={ <DigitalClock /> } />
+			  <Route path="/StopWatch" element={ <StopWatch /> } />
+			  <Route path="/GradientColorGenerator" element={ <GradientColorGenerator /> } />
+			  
 			</Routes>
 			<Footer />
     </>
