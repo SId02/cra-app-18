@@ -31,7 +31,9 @@ import InfiniteScroll from "./components/Pages/InfiniteScroll";
 import WordCounter from "./components/Pages/WordCounter";
 import DigitalClock from "./components/Pages/DigitalClock";
 import StopWatch from "./components/Pages/StopWatch";
-import GradientColorGenerator from "./components/Pages/GradientColorGenerator";
+import GradientColorGenerator from "./components/Layout/GradientColorGenerator/GradientColorGenerator";
+import ProductListPaginations from "./components/Pages/ProductListPaginations";
+import ProductListSearchSortFilter from "./components/Pages/ProductListSearchSortFilter";
 function App() {
   return (
     <>
@@ -68,6 +70,8 @@ function App() {
 			  <Route path="/WordCounter" element={ <WordCounter /> } />
 			  <Route path="/DigitalClock" element={ <DigitalClock /> } />
 			  <Route path="/StopWatch" element={ <StopWatch /> } />
+			  <Route path="/ProductListPaginations" element={ <ProductListPaginations /> } />
+			  <Route path="/ProductListSearchSortFilter" element={ <ProductListSearchSortFilter /> } />
 			  <Route path="/GradientColorGenerator" element={ <GradientColorGenerator /> } />
 			  
 			</Routes>

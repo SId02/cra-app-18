@@ -122,7 +122,7 @@ const Home = () => {
 											</div>
 											<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/GithubApi">Github User Profile Finder</Link>
+													<Link to="/GradientColorGenerator">Gradient Color Generator</Link>
 													</div>
 											</div>
 											<div className="column is-3 has-text-centered">
@@ -135,11 +135,11 @@ const Home = () => {
 													<Link to="/StopWatch">Stop Watch</Link>
 													</div>
 						</div>
-													<div className="column is-3 has-text-centered">
+													{/*<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
 													<Link to="/GradientColorGenerator">Gradient Color Generator</Link>
 													</div>
-											</div>
+													</div>*/}
 											{/* <div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
 													<Link to="/GradientColorGenerator">Gradient Color Generator</Link>
