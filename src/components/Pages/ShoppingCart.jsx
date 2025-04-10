@@ -3,7 +3,7 @@ import Products from "../Layout/Shop/Products";
 import Cart from "../Layout/Shop/Cart";
 import { cartReducer } from "../../reducers/cartReducer";
 import axios from "axios";
-
+import { Link } from 'react-router-dom';
 function ShoppingCart() {
 	const [state, dispatch] = useReducer(cartReducer, {
 		products: [],
@@ -35,6 +35,13 @@ function ShoppingCart() {
 					</div>
 				</div>
 			</div>
+			 <footer className="footer">
+					<div className="content has-text-centered">
+					  <Link to="/" className="has-text-link">
+						Back to Home
+					  </Link>
+					</div>
+				  </footer>
 		</>
 	);
 }

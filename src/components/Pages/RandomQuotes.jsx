@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TestimonialSlider from "../Layout/TestimonialSlider/TestimonialSlider"
 import axios from "axios";
-
+import { Link } from 'react-router-dom';
 const RandomQuotes = () => {
 	const [qoute, setQuote] = useState("");
 	const handleQuote = async () => {
@@ -39,7 +39,13 @@ const RandomQuotes = () => {
 			<TestimonialSlider />
 			<br />
 			<hr />
-
+<footer className="footer">
+		<div className="content has-text-centered">
+		  <Link to="/" className="has-text-link">
+			Back to Home
+		  </Link>
+		</div>
+	  </footer>
 		</>
 	);
 };

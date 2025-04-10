@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 const ProductListSearchSortFilter = () => {
     const [products, setProducts] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
@@ -81,6 +81,7 @@ const ProductListSearchSortFilter = () => {
     }
 
     return (
+        <>
         <div className="container">
             <h1 className="title">Product List</h1>
             <div className="container">
@@ -153,6 +154,14 @@ const ProductListSearchSortFilter = () => {
                 ))}
             </div>
         </div>
+         <footer className="footer">
+                <div className="content has-text-centered">
+                  <Link to="/" className="has-text-link">
+                    Back to Home
+                  </Link>
+                </div>
+              </footer>
+        </>
     );
 };
 

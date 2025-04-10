@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import DataInTable from "../Layout/DataInTable/DataInTable";
 import ReveiwRating from "../Layout/ReviewRating/ReviewRating";
 const fullDev = [
@@ -88,7 +89,13 @@ const Select = () => {
 			<br />
 			<hr />
 			<br />
-		
+		  <footer className="footer">
+				<div className="content has-text-centered">
+				  <Link to="/" className="has-text-link">
+					Back to Home
+				  </Link>
+				</div>
+			  </footer>
 			
 		</>
 	);

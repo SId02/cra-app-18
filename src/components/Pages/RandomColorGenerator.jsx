@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 const RandomColorGenerator = () => {
 	const hex = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F",];
 	const [color, setColor] = useState("#");
@@ -62,6 +63,13 @@ const RandomColorGenerator = () => {
 					</div>
 				</div>
 			</section>
+			 <footer className="footer">
+					<div className="content has-text-centered">
+					  <Link to="/" className="has-text-link">
+						Back to Home
+					  </Link>
+					</div>
+				  </footer>
 		</>
 	);
 };

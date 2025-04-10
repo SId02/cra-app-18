@@ -1,6 +1,4 @@
-
 import React, { useState, useEffect } from 'react';
-
 const NumberConverter = () => {
   const [inputNumber, setInputNumber] = useState('');
   const [decimalNumber, setDecimalNumber] = useState('');

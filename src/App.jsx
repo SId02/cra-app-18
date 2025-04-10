@@ -34,6 +34,8 @@ import StopWatch from "./components/Pages/StopWatch";
 import GradientColorGenerator from "./components/Layout/GradientColorGenerator/GradientColorGenerator";
 import ProductListPaginations from "./components/Pages/ProductListPaginations";
 import ProductListSearchSortFilter from "./components/Pages/ProductListSearchSortFilter";
+import PasswordStrengthChecker from "./components/Pages/PasswordStrengthChecker";
+import RandomUser from "./components/Pages/RandomUser";
 function App() {
   return (
     <>
@@ -60,7 +62,7 @@ function App() {
 				<Route path="/LeapYearChecker" element={ <LeapYearChecker/> } />
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
 				<Route path="/GithubApi" element={ <GithubUserProfileFinder /> } />
-				<Route path="/LoginPageWithDefaultValue" element={ <LoginPageWithDefaultValue /> } />
+			<Route path="/LoginPageWithDefaultValue"element={<LoginPageWithDefaultValue/>}/>
 				<Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
 			  <Route path="/Typeahead" element={ <Typeahead /> } />
 			  <Route path="/PokemonDash" element={ <PokemonDash /> } />
@@ -73,6 +75,9 @@ function App() {
 			  <Route path="/ProductListPaginations" element={ <ProductListPaginations /> } />
 			  <Route path="/ProductListSearchSortFilter" element={ <ProductListSearchSortFilter /> } />
 			  <Route path="/GradientColorGenerator" element={ <GradientColorGenerator /> } />
+			  <Route path="/PasswordStrengthChecker" element={ <PasswordStrengthChecker /> } />
+			  <Route path="/RandomUser" element={ <RandomUser /> } />
+			  <Route path="/InfiniteScroll" element={<InfiniteScroll />} />
 			  
 			</Routes>
 			<Footer />

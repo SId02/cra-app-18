@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 const MaskedNumber = () => {
     const [number, setNumber] = useState("1234567890");
 	const [maskedNumber, setMaskedNumber] = useState("");

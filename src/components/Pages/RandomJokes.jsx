@@ -1,6 +1,6 @@
 import  { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 
 const RandomJokes = () => {
   const [joke, setJoke] = useState('Loading a hilarious joke...');
@@ -66,6 +66,13 @@ const RandomJokes = () => {
         </button>
       </div>
       </section>
+      <footer className="footer">
+              <div className="content has-text-centered">
+                <Link to="/" className="has-text-link">
+                  Back to Home
+                </Link>
+              </div>
+            </footer>
       </>
   );
 };

@@ -13,7 +13,7 @@ const PasswordGenerator = () => {
 		let pass = "";
 		let letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		if (numberAllowed) letter += "0123456789";
-		if (symbolAllowed) letter += "!@#$%&*";
+		if (symbolAllowed) letter += "!@#$%^&*";
 
 		for (let i = 1; i <= length; i++) {
 			let char = Math.floor(Math.random() * letter.length + 1);

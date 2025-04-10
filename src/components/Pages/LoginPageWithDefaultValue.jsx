@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 const LoginPageWithDefaultValue = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -68,5 +67,4 @@ const LoginPageWithDefaultValue = () => {
     </>
   );
 };
-
 export default LoginPageWithDefaultValue;

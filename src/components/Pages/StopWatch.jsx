@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 const StopWatch = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [seconds, setSeconds] = useState(0);
@@ -54,6 +56,8 @@ const StopWatch = () => {
     `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 
   return (
+    <>
+    
     <div className="container">
       <div className="card">
         <div className="card-content has-text-centered">
@@ -97,6 +101,14 @@ const StopWatch = () => {
         </div>
       </div>
     </div>
+                    <footer className="footer">
+                          <div className="content has-text-centered">
+                            <Link to="/" className="has-text-link">
+                              Back to Home
+                            </Link>
+                          </div>
+                        </footer>
+                  </>
   );
 };
 
