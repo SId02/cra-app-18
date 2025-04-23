@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'bulma/css/bulma.min.css';
+import { Link } from 'react-router-dom';
 
 function ValidationForm() {
   const [formData, setFormData] = useState({
@@ -62,6 +62,8 @@ function ValidationForm() {
   };
 
   return (
+    <>
+    
     <div className="container" style={{ marginTop: '2rem' }}>
       <div className="columns is-centered">
         <div className="column is-half">
@@ -124,7 +126,15 @@ function ValidationForm() {
           </form>
         </div>
       </div>
-    </div>
+      </div>
+       <footer className="footer">
+              <div className="content has-text-centered">
+                <Link to="/" className="has-text-link">
+                  Back to Home
+                </Link>
+              </div>
+            </footer>
+                  </>
   );
 }
 

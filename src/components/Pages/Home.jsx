@@ -145,6 +145,11 @@ const Home = () => {
 													<Link to="/InfiniteScroll">Infinite Scroll</Link>
 													</div>
 						</div>
+						<div className="column is-3 has-text-centered">
+													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
+													<Link to="/ValidationForm">Validation Form</Link>
+													</div>
+						</div>
 						
 											{/* <div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">

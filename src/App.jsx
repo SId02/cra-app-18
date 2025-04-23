@@ -36,6 +36,7 @@ import ProductListPaginations from "./components/Pages/ProductListPaginations";
 import ProductListSearchSortFilter from "./components/Pages/ProductListSearchSortFilter";
 import PasswordStrengthChecker from "./components/Pages/PasswordStrengthChecker";
 import RandomUser from "./components/Pages/RandomUser";
+import ValidationForm from "./components/Pages/ValidationForm";
 function App() {
   return (
     <>
@@ -78,7 +79,7 @@ function App() {
 			  <Route path="/PasswordStrengthChecker" element={ <PasswordStrengthChecker /> } />
 			  <Route path="/RandomUser" element={ <RandomUser /> } />
 			  <Route path="/InfiniteScroll" element={<InfiniteScroll />} />
-			  
+			  <Route path="/ValidationForm" element={<ValidationForm />} />
 			</Routes>
 			<Footer />
     </>
