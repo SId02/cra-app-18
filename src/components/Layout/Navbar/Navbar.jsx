@@ -50,10 +50,10 @@ const Navbar = () => {
 									</NavLink>
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
-										to="/ShoppingCart"
+										to="/CRUDStudentComponent"
 									>
-										Shop
-									</NavLink>
+										CRUDStudentComponent
+									</NavLink> 
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
 										to="/DatePicker"

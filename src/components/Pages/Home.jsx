@@ -48,11 +48,11 @@ const Home = () => {
 								</div>
 							</div>
 
-							<div className="column is-3 has-text-centered">
+							{/* <div className="column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold">
 									<p>React-Redux</p>
 								</div>
-							</div>
+							</div> */}
 
 							<div className="column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold">
@@ -145,12 +145,17 @@ const Home = () => {
 													<Link to="/InfiniteScroll">Infinite Scroll</Link>
 													</div>
 						</div>
+						{/* <div className="column is-3 has-text-centered">
+													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
+													<Link to="/CRUDStudentComponent">CRUD Student Component</Link>
+													</div>
+						</div> */}
+					
 						<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/ValidationForm">Validation Form</Link>
+													<Link to="/WeatherChecker">Weather Checker</Link>
 													</div>
-						</div>
-						
+											</div>
 											{/* <div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
 													<Link to="/GradientColorGenerator">Gradient Color Generator</Link>

@@ -9,7 +9,6 @@ import Search from "./components/Pages/Search";
 import RandomColorGenerator from "./components/Pages/RandomColorGenerator";
 import Select from "./components/Pages/Select";
 import RandomQuotes from "./components/Pages/RandomQuotes";
-import ShoppingCart from "./components/Pages/ShoppingCart";
 import CoinEx from "./components/Pages/CoinEx/CoinEx";
 import Coins from "./components/Pages/CoinEx/Coins";
 import Exchanges from "./components/Pages/CoinEx/Exchanges";
@@ -37,6 +36,8 @@ import ProductListSearchSortFilter from "./components/Pages/ProductListSearchSor
 import PasswordStrengthChecker from "./components/Pages/PasswordStrengthChecker";
 import RandomUser from "./components/Pages/RandomUser";
 import ValidationForm from "./components/Pages/ValidationForm";
+import CRUDStudentComponent from "./components/Pages/CRUDStudentComponent";
+import WeatherChecker from "./components/Pages/WeatherChecker";
 function App() {
   return (
     <>
@@ -49,7 +50,6 @@ function App() {
 				<Route path="/Select" element={<Select />} />
 				<Route path="/RandomColorGenerator" element={<RandomColorGenerator />} />
 				<Route path="/RandomQuotes" element={<RandomQuotes />} />		
-				<Route path="/ShoppingCart" element={<ShoppingCart />} />
 				<Route path="/Counter" element={ <Counter /> } />
 				<Route path="/PasswordGenerator" element={<PassowrdGenerators/> } />
 				<Route path="/CoinEx" element={<CoinEx />}>
@@ -79,6 +79,8 @@ function App() {
 			  <Route path="/PasswordStrengthChecker" element={ <PasswordStrengthChecker /> } />
 			  <Route path="/RandomUser" element={ <RandomUser /> } />
 			  <Route path="/InfiniteScroll" element={<InfiniteScroll />} />
+			  <Route path="/CRUDStudentComponent" element={ <CRUDStudentComponent /> } />
+			  <Route path="/WeatherChecker" element={<WeatherChecker/>} />
 			  <Route path="/ValidationForm" element={<ValidationForm />} />
 			</Routes>
 			<Footer />
