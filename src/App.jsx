@@ -21,7 +21,6 @@ import DatePickerWithMax from "./components/Pages/DatePickerWithMax";
 import AgeValidation from "./components/Pages/AgeValidation";
 import LeapYearChecker from "./components/Pages/LeapYearChecker";
 import LoginPageWithDefaultValue from "./components/Pages/LoginPageWithDefaultValue";
-import LoginPageWithAPI from "./components/Pages/LoginPageWithAPI";
 import GithubUserProfileFinder from "./components/Pages/GithubUserProfileFinder";
 import Typeahead from "./components/Pages/Typeahead";
 import PokemonDash from "./components/Pages/PokemonDash";
@@ -64,7 +63,7 @@ function App() {
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
 				<Route path="/GithubApi" element={ <GithubUserProfileFinder /> } />
 			<Route path="/LoginPageWithDefaultValue"element={<LoginPageWithDefaultValue/>}/>
-				<Route path="/LoginPageWithAPI" element={ <LoginPageWithAPI /> } />
+				
 			  <Route path="/Typeahead" element={ <Typeahead /> } />
 			  <Route path="/PokemonDash" element={ <PokemonDash /> } />
 				<Route path="*" element={<NotFound />} />

@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import Ticker from "../Layout/StockTicker/Ticker";
+import { Link } from 'react-router-dom';
 const DigitalClock = () => {
   const [dateTime, setDateTime] = useState({
     time: '',
@@ -28,13 +30,30 @@ const DigitalClock = () => {
   }, []);
 
   return (
-    <div className="container">
+    <>
+      <div className="container">
       <div className="box has-text-centered">
         <h1 className="title is-2">{dateTime.time}</h1>
         <h2 className="subtitle is-4">{dateTime.day}</h2>
         <h3 className="subtitle is-5">{dateTime.date}</h3>
       </div>
-    </div>
+      </div>
+      <hr />
+      <Ticker />
+      <hr />
+  
+
+
+      <hr />
+        <footer className="footer">
+                    <div className="content has-text-centered">
+                      <Link to="/" className="has-text-link">
+                        Back to Home
+                      </Link>
+                    </div>
+                  </footer>
+    </>
+    
   );
 };
 
