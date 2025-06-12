@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+ import { Provider } from 'react-redux';
 import Navbar from "./components/Layout/Navbar/Navbar";
 import Footer from "./components/Layout/Footer/Footer";
 import Home from "./components/Pages/Home";
@@ -13,6 +14,7 @@ import CoinEx from "./components/Pages/CoinEx/CoinEx";
 import Coins from "./components/Pages/CoinEx/Coins";
 import Exchanges from "./components/Pages/CoinEx/Exchanges";
 import Counter from "./components/Pages/Counter";
+import CRUDRT from "./components/Layout/CRUDComponentRT/CRUDRT";
 import DataFetchUsingUseReducer from "./components/Pages/DataFetchUsingUseReducer";
 import PassowrdGenerators from "./components/Pages/PasswordGenerator";
 import CurrencyConverter from "./components/Pages/CurrencyConverter";
@@ -34,19 +36,27 @@ import ProductListPaginations from "./components/Pages/ProductListPaginations";
 import ProductListSearchSortFilter from "./components/Pages/ProductListSearchSortFilter";
 import PasswordStrengthChecker from "./components/Pages/PasswordStrengthChecker";
 import RandomUser from "./components/Pages/RandomUser";
-import ValidationForm from "./components/Pages/ValidationForm";
+import FormValidationUsinguseReducer from "./components/Pages/FormValidationUsinguseReducer";
 import CRUDStudentComponent from "./components/Pages/CRUDStudentComponent";
 import WeatherChecker from "./components/Pages/WeatherChecker";
+import Store from "./components/Store/store"
+import NumberConverter from "./components/Pages/NumberConverter";
+import NumberAnalyzer from "./components/Pages/NumberAnalyzer";
+import LazyLoading from "./components/Pages/LazyLoading";
 function App() {
   return (
     <>
-     <Navbar />
+		  <Navbar />
+		  <Provider store={Store}>
 		  <Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/DatePicker" element={<DatePicker />} />
 				<Route path="/Pagination" element={<Pagination />} />
 				<Route path="/Search" element={<Search />} />
-				<Route path="/Select" element={<Select />} />
+			  	<Route path="/Select" element={ <Select /> } />
+				  <Route path="/CRUDRT" element={ <CRUDRT /> } />
+				   <Route path="/LazyLoading" element={ <LazyLoading /> } />
+				  
 				<Route path="/RandomColorGenerator" element={<RandomColorGenerator />} />
 				<Route path="/RandomQuotes" element={<RandomQuotes />} />		
 				<Route path="/Counter" element={ <Counter /> } />
@@ -63,7 +73,6 @@ function App() {
 				<Route path="/DatePickerWithMax" element={<DatePickerWithMax />} />
 				<Route path="/GithubApi" element={ <GithubUserProfileFinder /> } />
 			<Route path="/LoginPageWithDefaultValue"element={<LoginPageWithDefaultValue/>}/>
-				
 			  <Route path="/Typeahead" element={ <Typeahead /> } />
 			  <Route path="/PokemonDash" element={ <PokemonDash /> } />
 				<Route path="*" element={<NotFound />} />
@@ -80,8 +89,11 @@ function App() {
 			  <Route path="/InfiniteScroll" element={<InfiniteScroll />} />
 			  <Route path="/CRUDStudentComponent" element={ <CRUDStudentComponent /> } />
 			  <Route path="/WeatherChecker" element={<WeatherChecker/>} />
-			  <Route path="/ValidationForm" element={<ValidationForm />} />
-			</Routes>
+				  <Route path="/FormValidationUsinguseReducer" element={ <FormValidationUsinguseReducer /> } />
+				  <Route path="/NumberConverter" element={ <NumberConverter /> } />
+				  <Route path="/NumberAnalyzer" element={<NumberAnalyzer />} />
+			  </Routes>
+			  </Provider> 
 			<Footer />
     </>
   )

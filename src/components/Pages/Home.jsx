@@ -48,11 +48,11 @@ const Home = () => {
 								</div>
 							</div>
 
-							{/* <div className="column is-3 has-text-centered">
+							<div className="column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold">
 									<p>React-Redux</p>
 								</div>
-							</div> */}
+							</div>
 
 							<div className="column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold">
@@ -71,7 +71,7 @@ const Home = () => {
 							</div>
 							<div className="column is-3 has-text-centered">
 								<div className="box is-flex is-align-items-center has-background-light is-justify-content-center is-size-4 is-bold">
-									<p></p>
+									<p>@reduxjs/toolkit</p>
 								</div>
 							</div>
 							<div className="column is-3 has-text-centered">
@@ -145,28 +145,28 @@ const Home = () => {
 													<Link to="/InfiniteScroll">Infinite Scroll</Link>
 													</div>
 						</div>
-						{/* <div className="column is-3 has-text-centered">
+						<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/CRUDStudentComponent">CRUD Student Component</Link>
+													<Link to="/FormValidationUsinguseReducer">FormValidationUsinguseReducer</Link>
 													</div>
-						</div> */}
+						</div>
 					
 						<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
 													<Link to="/WeatherChecker">Weather Checker</Link>
 													</div>
 											</div>
-											{/* <div className="column is-3 has-text-centered">
+											 <div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/GradientColorGenerator">Gradient Color Generator</Link>
+													<Link to="/CRUDRT">CRUD With ReduxToolkit</Link>
 													</div>
 											</div>
 											<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
-													<Link to="/">React JS 18</Link>
+													<Link to="/LazyLoading">Lazy Loading</Link>
 													</div>
 											</div>
-											<div className="column is-3 has-text-centered">
+											{/*<div className="column is-3 has-text-centered">
 													<div className="box is-flex is-align-items-center has-background-light is-justify-content-center  is-bold">
 													<Link to="/">React JS 18</Link>
 													</div>

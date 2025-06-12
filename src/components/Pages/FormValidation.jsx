@@ -1,5 +1,4 @@
 import  { useState } from "react";
-import WordCounter from "../Pages/WordCounter";
 import TrafficSignal from "../Layout/TrafficSignal/TrafficSignal";
 const FormValidation = () => {
 	const [username, setusername] = useState("");
@@ -114,10 +113,6 @@ const FormValidation = () => {
 					<div className="column is-4"></div>
 				</div>
 			</div>
-			<br />
-			<br />
-			<WordCounter/>
-			<hr />
 			<br />
 			<br />
 		    <TrafficSignal /> 
