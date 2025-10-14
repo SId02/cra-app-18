@@ -1,0 +1,36 @@
+.stock-ticker-container {
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 10px 0;
+}
+
+.stock-ticker-wrapper {
+  display: flex;
+  animation: ticker-scroll 20s linear infinite; /* Adjust duration as needed */
+}
+
+.stock-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.symbol {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #363636;
+}
+
+.price {
+  color: #007bff; /* Example price color */
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move completely off-screen to the left */
+  }
+}

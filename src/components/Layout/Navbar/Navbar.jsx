@@ -50,10 +50,10 @@ const Navbar = () => {
 									</NavLink>
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
-										to="/ShoppingCart"
+										to="/CRUDStudentComponent"
 									>
-										Shop
-									</NavLink>
+										CRUDStudentComponent
+									</NavLink> 
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
 										to="/DatePicker"
@@ -113,12 +113,12 @@ const Navbar = () => {
 									>
 										Leap Year Checker
 									</NavLink>
-									<NavLink
+									{/* <NavLink
 										className="navbar-item navbar-item-dropdown"
-										to="/LoginPageWithAPI"
+										to="/Page"
 									>
-										LoginPageWithAPI
-									</NavLink>
+										Pages
+									</NavLink> */}
 									<NavLink
 										className="navbar-item navbar-item-dropdown"
 										to="/CurrencyConverter"
