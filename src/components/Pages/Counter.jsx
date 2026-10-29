@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import TipCalculator from "../Layout/TipCalculator/TipCalculator";
 import DarkLightModeToggle from "./DarkLightModeToggle"
 import CountryDetails from "../Layout/CountryDetails/CountryDetails";

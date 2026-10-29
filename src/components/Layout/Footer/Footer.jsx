@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 
 const Footer = () => {
 	const mystyle = {
@@ -25,3 +25,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

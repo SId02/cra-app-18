@@ -1,4 +1,4 @@
-import React from "react";
+
 import Spinner from "../Layout/Spinner/Spinner";
 import ProgressBar from "../Layout/ProgressBar/ProgressBar";
 const Loader = () => {

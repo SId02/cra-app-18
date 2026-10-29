@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 const LoginPageWithDefaultValue = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -10,7 +10,9 @@ const LoginPageWithDefaultValue = () => {
     if (username === "admin" && password === "password") {
       setIsLoggedIn(true);
     } else {
-      setErrorMessage(" Invalid Credentials Please Check Username and Password ");
+      setErrorMessage(
+        " Invalid Credentials Please Check Username and Password admin & password",
+      );
       setTimeout(() => {
         setErrorMessage('');
       }, 2000);

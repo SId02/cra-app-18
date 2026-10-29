@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import TestimonialSlider from "../Layout/TestimonialSlider/TestimonialSlider"
 import axios from "axios";
 import { Link } from 'react-router-dom';

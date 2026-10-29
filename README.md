@@ -62,9 +62,9 @@ This project utilizes React JS version 18 along with other modern tools and libr
 
 **Core Technologies:**
 
-*   React JS (18.0.2 version)
+*   React JS (18.3.1 version)
 *   Bulma CSS (0.9.4 version)
-*   React Router DOM (Version 6)
+*   React Router DOM (6.30.6 Version)
 *   Axios
 *   Fetch API
 *   React-i18next
@@ -110,7 +110,7 @@ This project contains a collection of small React projects:
 *   Pagination
 *   Counter
 *   LoginPageWithDefault
-*   Random Color Generator
+*   Color Generator
 *   Shop
 *   Coin Exchange
 *   Date Picker
@@ -125,7 +125,6 @@ This project contains a collection of small React projects:
 *   Currency Converter
 *   Data Fetch
 *   Github API
-*   Typeahead
 *   Tip Calculator
 *   LightToDarkMode
 *   Country Detail

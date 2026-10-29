@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import DigitalClock from "./DigitalClock.jsx";
 import StopWatch from "./StopWatch.jsx";
 import axios from "axios";

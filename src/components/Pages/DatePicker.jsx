@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import YearsCalculator from "../Layout/YearCalculator/YearCalculator";
 const DatePicker = () => {
 	const [disable, setDisable] = useState(true);

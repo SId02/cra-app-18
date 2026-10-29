@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
-
-let nextUserId = 1;
+import { useState } from 'react';
 
 const DynamicForm = () => {
-  const [users, setUsers] = useState([{
-    id: nextUserId++,
-    firstName: '',
-    lastName: '',
-    dob: '',
-    age: '',
-    city: '',
-    state: '',
-    country: '',
-    errors: {},
-  }]);
+  const [users, setUsers] = useState([
+    {
+      id: Date.now(),
+      firstName: '',
+      lastName: '',
+      dob: '',
+      age: '',
+      city: '',
+      state: '',
+      country: '',
+      errors: {},
+    },
+  ]);
 
   const addUser = (e) => {
     e.preventDefault();
-    setUsers(prevUsers => [
+    setUsers((prevUsers) => [
       ...prevUsers,
       {
-        id: nextUserId++,
+        id: Date.now() + Math.random(), // ensures unique ID
         firstName: '',
         lastName: '',
         dob: '',
@@ -29,25 +29,20 @@ const DynamicForm = () => {
         state: '',
         country: '',
         errors: {},
-      }
+      },
     ]);
   };
 
   const deleteUser = (e, id) => {
     e.preventDefault();
-    const userGroup = e.target.closest('.user-group');
-    if (userGroup) {
-      userGroup.classList.add('user-group-remove');
-      userGroup.addEventListener('animationend', () => {
-        setUsers(prevUsers => prevUsers.filter(user => user.id !== id));
-      }, { once: true });
-    }
+    // Directly filter out the user in React state
+    setUsers((prevUsers) => prevUsers.filter((user) => user.id !== id));
   };
 
   const handleChange = (e, id, field) => {
     const { value } = e.target;
-    setUsers(prevUsers =>
-      prevUsers.map(user => {
+    setUsers((prevUsers) =>
+      prevUsers.map((user) => {
         if (user.id === id) {
           const updatedUser = { ...user, [field]: value };
           if (field === 'dob') {
@@ -78,8 +73,8 @@ const DynamicForm = () => {
     let newErrors = {};
 
     // Validate First Name, Last Name, City, State, Country
-    ['firstName', 'lastName', 'city', 'state', 'country'].forEach(field => {
-      if (user[field].trim().length < 2) {
+    ['firstName', 'lastName', 'city', 'state', 'country'].forEach((field) => {
+      if (!user[field] || user[field].trim().length < 2) {
         newErrors[field] = `${field.charAt(0).toUpperCase() + field.slice(1)} must be at least 2 characters.`;
       }
     });
@@ -95,15 +90,15 @@ const DynamicForm = () => {
   };
 
   const handleBlur = (id) => {
-    setUsers(prevUsers =>
-      prevUsers.map(user => user.id === id ? validateInput(user) : user)
+    setUsers((prevUsers) =>
+      prevUsers.map((user) => (user.id === id ? validateInput(user) : user))
     );
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     let isFormValid = true;
-    const validatedUsers = users.map(user => {
+    const validatedUsers = users.map((user) => {
       const validatedUser = validateInput(user);
       if (Object.keys(validatedUser.errors).length > 0) {
         isFormValid = false;
@@ -115,24 +110,28 @@ const DynamicForm = () => {
     if (isFormValid) {
       console.log('Form is valid and ready to submit!');
       console.log(users);
-      // You would send data to an API here
+      // Send data to your API here
     } else {
       console.log('Form has validation errors.');
     }
   };
 
   return (
-    <div className="container is-max-desktop">
-      <div className="box p-4">
+    <div className="container is-max-desktop py-5">
+      <div className="box p-5">
         <h1 className="title is-4 has-text-centered">User Information Form</h1>
         <form onSubmit={handleSubmit}>
           <div id="user-info-fields">
-            {users.map(user => (
-              <div key={user.id} className={`box p-4 mb-4 user-group user-group-${user.id}`}>
+            {users.map((user, index) => (
+              <div key={user.id} className="box p-4 mb-4 user-group">
                 <div className="is-flex is-justify-content-space-between is-align-items-center mb-2">
-                  <h2 className="title is-5">User #{user.id}</h2>
+                  <h2 className="title is-5">User #{index + 1}</h2>
                   {users.length > 1 && (
-                    <button className="delete is-medium" onClick={(e) => deleteUser(e, user.id)}></button>
+                    <button
+                      type="button"
+                      className="delete is-medium"
+                      onClick={(e) => deleteUser(e, user.id)}
+                    ></button>
                   )}
                 </div>
                 <div className="columns is-multiline">
@@ -149,11 +148,16 @@ const DynamicForm = () => {
                           onChange={(e) => handleChange(e, user.id, 'firstName')}
                           onBlur={() => handleBlur(user.id)}
                         />
-                        <span className="icon is-small is-left"><i className="fas fa-user"></i></span>
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-user"></i>
+                        </span>
                       </div>
-                      {user.errors.firstName && <p className="help is-danger" style={{ display: 'block' }}>{user.errors.firstName}</p>}
+                      {user.errors.firstName && (
+                        <p className="help is-danger">{user.errors.firstName}</p>
+                      )}
                     </div>
                   </div>
+
                   {/* Last Name */}
                   <div className="column is-6">
                     <div className="field">
@@ -167,11 +171,16 @@ const DynamicForm = () => {
                           onChange={(e) => handleChange(e, user.id, 'lastName')}
                           onBlur={() => handleBlur(user.id)}
                         />
-                        <span className="icon is-small is-left"><i className="fas fa-user"></i></span>
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-user"></i>
+                        </span>
                       </div>
-                      {user.errors.lastName && <p className="help is-danger" style={{ display: 'block' }}>{user.errors.lastName}</p>}
+                      {user.errors.lastName && (
+                        <p className="help is-danger">{user.errors.lastName}</p>
+                      )}
                     </div>
                   </div>
+
                   {/* DOB */}
                   <div className="column is-4">
                     <div className="field">
@@ -184,21 +193,35 @@ const DynamicForm = () => {
                           onChange={(e) => handleChange(e, user.id, 'dob')}
                           onBlur={() => handleBlur(user.id)}
                         />
-                        <span className="icon is-small is-left"><i className="fas fa-calendar-alt"></i></span>
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-calendar-alt"></i>
+                        </span>
                       </div>
-                      {user.errors.dob && <p className="help is-danger" style={{ display: 'block' }}>{user.errors.dob}</p>}
+                      {user.errors.dob && (
+                        <p className="help is-danger">{user.errors.dob}</p>
+                      )}
                     </div>
                   </div>
+
                   {/* Age */}
                   <div className="column is-2">
                     <div className="field">
                       <label className="label">Age</label>
                       <div className="control has-icons-left">
-                        <input className="input" type="number" placeholder="Age" value={user.age} readOnly />
-                        <span className="icon is-small is-left"><i className="fas fa-birthday-cake"></i></span>
+                        <input
+                          className="input"
+                          type="number"
+                          placeholder="Age"
+                          value={user.age}
+                          readOnly
+                        />
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-birthday-cake"></i>
+                        </span>
                       </div>
                     </div>
                   </div>
+
                   {/* City */}
                   <div className="column is-6">
                     <div className="field">
@@ -212,11 +235,16 @@ const DynamicForm = () => {
                           onChange={(e) => handleChange(e, user.id, 'city')}
                           onBlur={() => handleBlur(user.id)}
                         />
-                        <span className="icon is-small is-left"><i className="fas fa-city"></i></span>
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-city"></i>
+                        </span>
                       </div>
-                      {user.errors.city && <p className="help is-danger" style={{ display: 'block' }}>{user.errors.city}</p>}
+                      {user.errors.city && (
+                        <p className="help is-danger">{user.errors.city}</p>
+                      )}
                     </div>
                   </div>
+
                   {/* State */}
                   <div className="column is-6">
                     <div className="field">
@@ -230,11 +258,16 @@ const DynamicForm = () => {
                           onChange={(e) => handleChange(e, user.id, 'state')}
                           onBlur={() => handleBlur(user.id)}
                         />
-                        <span className="icon is-small is-left"><i className="fas fa-map-marker-alt"></i></span>
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-map-marker-alt"></i>
+                        </span>
                       </div>
-                      {user.errors.state && <p className="help is-danger" style={{ display: 'block' }}>{user.errors.state}</p>}
+                      {user.errors.state && (
+                        <p className="help is-danger">{user.errors.state}</p>
+                      )}
                     </div>
                   </div>
+
                   {/* Country */}
                   <div className="column is-6">
                     <div className="field">
@@ -248,9 +281,13 @@ const DynamicForm = () => {
                           onChange={(e) => handleChange(e, user.id, 'country')}
                           onBlur={() => handleBlur(user.id)}
                         />
-                        <span className="icon is-small is-left"><i className="fas fa-globe-americas"></i></span>
+                        <span className="icon is-small is-left">
+                          <i className="fas fa-globe-americas"></i>
+                        </span>
                       </div>
-                      {user.errors.country && <p className="help is-danger" style={{ display: 'block' }}>{user.errors.country}</p>}
+                      {user.errors.country && (
+                        <p className="help is-danger">{user.errors.country}</p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -260,10 +297,14 @@ const DynamicForm = () => {
 
           <div className="field is-grouped is-justify-content-center mt-4">
             <p className="control">
-              <button className="button is-link is-light" onClick={addUser}>Add User</button>
+              <button type="button" className="button is-link is-light" onClick={addUser}>
+                Add User
+              </button>
             </p>
             <p className="control">
-              <button className="button is-success" type="submit">Submit</button>
+              <button type="submit" className="button is-success">
+                Submit
+              </button>
             </p>
           </div>
         </form>

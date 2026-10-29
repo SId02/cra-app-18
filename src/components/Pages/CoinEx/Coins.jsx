@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import axois from "axios";
 import Loader from "../Loader";
 export const server = "https://api.coingecko.com/api/v3";

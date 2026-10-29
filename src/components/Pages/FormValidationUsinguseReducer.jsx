@@ -1,5 +1,3 @@
-
-//FormValidationUsinguseReducer.jsx
 import { useReducer } from 'react';
 
 // Initial state for our form

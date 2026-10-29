@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import MaskedNumber from "./MaskedNumber";
 const LeapYearChecker = () => {
     const [year, setYear] = useState('');

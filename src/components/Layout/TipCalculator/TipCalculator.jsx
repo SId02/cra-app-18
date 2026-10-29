@@ -1,5 +1,5 @@
 
-import React ,{ useState } from "react";
+import { useState } from "react";
 const TipCalculator = () => {
 	const [billAmount, setBillAmount] = useState(null);
 	const [tipPercentage, setTipPercentage] = useState();
