@@ -32,7 +32,6 @@ import DigitalClock from "./components/Pages/DigitalClock";
 import StopWatch from "./components/Pages/StopWatch";
 import ProductListPaginations from "./components/Pages/ProductListPaginations";
 import ProductListSearchSortFilter from "./components/Pages/ProductListSearchSortFilter";
-import PasswordStrengthChecker from "./components/Pages/PasswordStrengthChecker";
 import RandomUser from "./components/Pages/RandomUser";
 import FormValidationUsinguseReducer from "./components/Pages/FormValidationUsinguseReducer";
 import CRUDStudentComponent from "./components/Pages/CRUDStudentComponent";
@@ -94,10 +93,6 @@ function App() {
           />
          
           <Route path="/ColorGenerator" element={<ColorGenerator />} />
-          <Route
-            path="/PasswordStrengthChecker"
-            element={<PasswordStrengthChecker />}
-          />
           <Route path="/RandomUser" element={<RandomUser />} />
           <Route path="/InfiniteScroll" element={<InfiniteScroll />} />
           <Route
