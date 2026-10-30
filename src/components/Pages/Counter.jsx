@@ -1,7 +1,6 @@
 import  { useState } from "react";
 import TipCalculator from "../Layout/TipCalculator/TipCalculator";
 import DarkLightModeToggle from "./DarkLightModeToggle"
-import CountryDetails from "../Layout/CountryDetails/CountryDetails";
 function Counter() {
 	const [count, setCount] = useState(0);
 
@@ -65,11 +64,6 @@ function Counter() {
 							 <div className="container">
 										<DarkLightModeToggle/>
 							</div>	
- 							<div className="container">
-										<CountryDetails/>
-							</div>	
-		
-		
 		</>
 	);
 }
