@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import store from "./components/Store/store";
- import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import Navbar from "./components/Layout/Navbar/Navbar";
 import Footer from "./components/Layout/Footer/Footer";
 import Home from "./components/Pages/Home";
@@ -75,7 +75,6 @@ function App() {
             path="/LoginPageWithDefaultValue"
             element={<LoginPageWithDefaultValue />}
           />
-   
           <Route path="/PokemonDash" element={<PokemonDash />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/MultiLang" element={<MultiLang />} />
@@ -91,7 +90,6 @@ function App() {
             path="/ProductListSearchSortFilter"
             element={<ProductListSearchSortFilter />}
           />
-         
           <Route path="/ColorGenerator" element={<ColorGenerator />} />
           <Route path="/RandomUser" element={<RandomUser />} />
           <Route path="/InfiniteScroll" element={<InfiniteScroll />} />

@@ -108,16 +108,9 @@ const Home = () => {
               { path: "/PokemonDash", name: "Pokemon Dash" },
               { path: "/DigitalClock", name: "Digital Clock" },
               { path: "/StopWatch", name: "Stop Watch" },
-              {
-                path: "/PasswordStrengthChecker",
-                name: "Password Strength Checker",
-              },
               { path: "/RandomUser", name: "Random User" },
               { path: "/InfiniteScroll", name: "Infinite Scroll" },
-              {
-                path: "/FormValidationUsinguseReducer",
-                name: "FormValidationUsinguseReducer",
-              },
+              { path: "/FormValidationUsinguseReducer",name: "FormValidationUsinguseReducer"},
               { path: "/WeatherChecker", name: "Weather Checker" },
               { path: "/CRUDRT", name: "CRUD With ReduxToolkit" },
               { path: "/LazyLoading", name: "Lazy Loading" },
